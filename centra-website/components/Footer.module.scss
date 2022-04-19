@@ -1,0 +1,215 @@
+//footer
+
+.footerContainer {
+  background-color: #005db9;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 4%;
+  @media only screen and (max-width: 1100px) {
+    padding-right: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+
+    padding-bottom: 10%;
+    padding-left: unset;
+  }
+}
+.footerTitleContainer {
+  display: flex;
+}
+
+.whiteArrow {
+  transform: scaleX(-1);
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @media only screen and (max-width: 700px) {
+    right: 5%;
+  }
+}
+
+.footerTitleContainer {
+  display: flex;
+  position: relative;
+}
+.footerLogo {
+  object-fit: cover;
+  margin-right: 50px;
+  width: 150px;
+  height: 48px;
+}
+.footerTitle {
+  font-family: TTCommons-Bold;
+  font-size: 84px;
+  color: white;
+  margin-bottom: 67px;
+  @media only screen and (max-width: 1100px) {
+    margin-bottom: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @media only screen and (max-width: 1100px) {
+    margin-bottom: 100px;
+  }
+}
+
+.footerSubtitle {
+  font-family: TTCommons-Bold;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 1100px) {
+    padding-left: 10%;
+  }
+}
+.footerImg {
+  margin-top: 40px;
+  margin-left: -30px;
+}
+.footerLinkContainer {
+  display: flex;
+}
+.footerLinkColumn {
+  display: flex;
+  flex-direction: column;
+  margin-right: 110px;
+  position: relative;
+}
+.footerLinkTitle {
+  font-family: TTCommons-Bold;
+  font-size: 14px;
+  color: white;
+
+  @media only screen and (max-width: 1100px) {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-bottom: 2px;
+    font-size: 18px;
+  }
+}
+.footerLinkText {
+  z-index: 55;
+  &:hover {
+    color: #f2ff56;
+  }
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  color: white;
+  height: 48px;
+}
+
+.innerLinkContainer {
+  padding-left: 10%;
+  padding-top: 2%;
+  @media only screen and (max-width: 960px) {
+    padding-top: 20px;
+  }
+}
+
+.footerPlus {
+  color: grey;
+  font-size: 32px;
+  margin-bottom: 0px !important;
+  padding-right: 5%;
+  font-weight: 500;
+}
+
+.footerLinkTitleContainer {
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid lightgrey;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerText {
+  font-family: TTCommons-Regular;
+  font-size: 14px;
+  color: white;
+  margin-right: 9px;
+  &:hover {
+    color: #f2ff56;
+  }
+  @media only screen and (max-width: 1100px) {
+    margin-right: 0px;
+  }
+}
+
+p.footerText {
+  margin-right: 105px;
+  @media only screen and (max-width: 1100px) {
+    margin-right: 0px;
+  }
+}
+
+a.footerText:nth-child(5) {
+  margin-right: 154px;
+  @media only screen and (max-width: 1100px) {
+    margin-right: 0px;
+  }
+}
+
+a.footerText:nth-child(2) {
+  margin-left: 54px;
+}
+a.footerText {
+  @media only screen and (max-width: 1100px) {
+    margin-bottom: 0px;
+  }
+}
+
+.footerBottomLinksContainer {
+  display: flex;
+  margin-top: 111px;
+
+  justify-content: space-between;
+  @media only screen and (max-width: 1100px) {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.socialMediaLogos {
+  margin-right: 10px;
+  margin-top: -20px;
+  @media only screen and (max-width: 1100px) {
+    padding: 2%;
+    margin-bottom: 5%;
+  }
+  &:hover {
+    filter: invert(1);
+  }
+}
+
+.hideDiv {
+  opacity: 0;
+  height: 0px;
+  position: absolute;
+  z-index: -10;
+}
+
+.displayDiv {
+  transition: all 1s;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  opacity: 1;
+  z-index: 1;
+}
+
+.spacer {
+  height: 20px;
+}
+
+.footerImagesContainer {
+  display: flex;
+  margin-bottom: 20px;
+}

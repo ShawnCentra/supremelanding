@@ -1,0 +1,152 @@
+//featured
+.categoryText {
+  font-family: TTCommons-Bold;
+  font-size: 24px;
+  background: none;
+  border: none;
+
+  @media only screen and (max-width: 1220px) {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+.categoryFeaturedMargins {
+  margin-right: 50px;
+  @media only screen and (max-width: 1200px) {
+    margin-right: 25px;
+  }
+  @media only screen and (max-width: 990px) {
+    margin-right: 10px;
+  }
+}
+
+.greyBorder {
+  height: 0.5px;
+  background: lightgrey;
+  width: 100%;
+}
+.activeCategory {
+  border-bottom: 2px solid #005db9;
+}
+.greyBorder {
+  height: 0.5px;
+  background: lightgrey;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.categoryContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+
+  margin-top: 50px;
+  width: fit-content;
+}
+
+.featuredContainer {
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-bottom: 60px;
+}
+
+.projectsCategory {
+  font-family: TTCommons-Bold;
+  font-size: 14px;
+  color: #005db9;
+  margin-top: 20px;
+}
+
+.projectsTitle {
+  font-family: TTCommons-Bold;
+  font-size: 24px;
+  margin-top: 10px;
+  max-width:90%;
+}
+
+//carousel
+.carouselContainer {
+  margin-right: 2% !important;
+}
+.slide {
+  width: 99%;
+
+  margin-right: 60px;
+  &:hover {
+    .projectsTitle {
+      color: #005db9;
+    }
+  }
+}
+
+.projectImage {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slider {
+  max-width: fit-content;
+}
+
+.arrowImgContainerBack {
+  background: #f2ff56;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+  &:hover {
+    background: #005db9;
+    .backButton {
+      filter: invert(1);
+    }
+  }
+}
+
+.backButton {
+  -webkit-transform: rotate(178deg);
+  transform: rotate(178deg);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 7.3px;
+  padding-top: 9px;
+}
+
+.button {
+  border: none;
+  background-color: unset !important;
+  transition: 0.3s all;
+}
+
+.arrowImgContainer {
+  background: #f2ff56;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+  &:hover {
+    background: #005db9;
+    .arrowImg {
+      filter: invert(1);
+    }
+  }
+}
+
+.arrowImg {
+  transition: 0.3s all;
+  padding: 7.3px;
+  padding-top: 9px;
+}
+
+.premiumTitle {
+  font-family: TTCommons-Bold;
+  font-size: 52px;
+}
+
+.premiumText {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  width: 90%;
+  max-width: 800px;
+}

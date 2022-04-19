@@ -1,0 +1,487 @@
+// Products Section
+
+.productsTitle {
+  font-family: TTCommons-Bold;
+  font-size: 52px;
+  width: 100%;
+  max-width: 1000px;
+  @media only screen and (max-width: 990px) {
+    font-size: 46px;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 40px;
+  }
+}
+.doorProductsImg {
+  width: 98%;
+  object-fit: cover;
+}
+.productsText {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  padding-right: 10%;
+  max-width: 800px;
+}
+
+.productsTextWidth {
+  width: 100%;
+  max-width: 650px;
+}
+
+.productsNavButton {
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
+
+.SealImage {
+  @media only screen and (max-width: 1220px) {
+    position: absolute;
+    right: 10%;
+    margin-top: -42px;
+    opacity: 9%;
+  }
+}
+
+.productsCarouselButton {
+  background: none;
+  border: none;
+}
+
+.slider {
+  overflow: hidden !important;
+  width: 100%;
+  height: 400px;
+}
+.carousel {
+  overflow-x: auto;
+}
+
+//New Carousel
+.arrowBlack {
+  &:hover {
+    filter: invert(1);
+  }
+}
+
+.buttonLeft {
+  position: absolute;
+  left: 75px;
+  @media only screen and (max-width: 990px) {
+    left: unset;
+  }
+}
+
+.buttonRight {
+  position: absolute;
+  right: 75px;
+}
+
+.buttonRightProducts {
+  position: absolute;
+  right: 73px;
+}
+.buttonLeftProducts {
+  position: absolute;
+  left: 0px;
+}
+
+.arrowBlack {
+  position: absolute;
+  transition: 0.3s all;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  @media only screen and (max-width: 500px) {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+  }
+}
+
+.arrowBack {
+  transform: rotate(180deg);
+}
+
+.productsContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+
+  transition: 0.3s all;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+
+    .productsContentText {
+      text-decoration: underline;
+      color: #005db9;
+    }
+  }
+}
+
+.productsContentText {
+  font-family: TTCommons-Bold;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+}
+
+.productsContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+  margin-bottom:30px;
+}
+
+.productsContainerHome {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 1100px) {
+    width: auto;
+  }
+
+  @media only screen and (max-width: 960px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-top: 0px;
+  }
+}
+.divider {
+  height: 1px;
+  border: 1px solid #d8d8d88f;
+}
+
+.productsTextContainerHome {
+  max-width: 700px;
+}
+
+//doors type
+
+.doorsProductsCategoryContainerPerformance {
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  @media only screen and (max-width: 600px) {
+    margin-right: 5%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-right: 2%;
+  }
+}
+
+.doorsProductsTabImage {
+  width: 50%;
+  object-fit: cover;
+  object-position: top;
+  @media only screen and (max-width: 960px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.productsTabImage {
+  width: 50%;
+  object-fit: cover;
+  object-position: top;
+
+  @media only screen and (max-width: 1220px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.doorTypeProductTabTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media only screen and (max-width: 1220px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.doubleLinkContainer {
+  margin-left: 40px;
+  min-width: 40%;
+}
+.productsTextContainer {
+  padding-top: 70px;
+  @media only screen and (max-width: 1100px) {
+    width: auto;
+  }
+}
+.productsTextContainerPerformance {
+  display: flex !important;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  @media only screen and (max-width: 1250px) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 990px) {
+    width: 100%;
+  }
+}
+
+.productsTextContentContainer {
+  width: 80%;
+  margin-bottom: 50px;
+
+  margin-bottom: 50px;
+  @media only screen and (max-width: 1100px) {
+    width: auto;
+    margin-right: 0%;
+  }
+  @media only screen and (max-width: 400px) {
+    margin-right: 2%;
+  }
+}
+
+.productsCategoryContainer {
+  border-bottom: 1px solid #fafafa;
+  display: grid;
+  grid-template-columns: 92px 92px;
+  column-gap: 50px;
+  margin-top: 23px;
+}
+
+.productsCategoryContainerHome {
+  border-bottom: 1px solid #fafafa;
+  /* display: grid; */
+  /* grid-template-columns: 92px 92px; */
+  /* grid-column-gap: 50px; */
+  /* -webkit-column-gap: 50px; */
+  /* column-gap: 50px; */
+  margin-top: 23px;
+  display: flex;
+  position: relative;
+}
+
+.productsImg {
+  margin-top: 76px;
+  margin-bottom: 20px;
+}
+
+.productsImgHome {
+  margin-top: 76px;
+}
+.widthCategoryDoors {
+  width: fit-content !important;
+}
+.productsCategoryText {
+  cursor: pointer;
+  font-family: TTCommons-Bold;
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-right: 50px;
+  width: fit-content;
+  @media only screen and (max-width: 1220px) {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 960px) {
+    width: min-content;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+
+.activeCategory {
+  border-bottom: 2px solid #005db9;
+  height: fit-content;
+}
+.greyBorder {
+  height: 0.5px;
+  background: lightgrey;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+//products tabs
+
+.productsCategoryContainerPerformance {
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  @media only screen and (max-width: 600px) {
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-right: 2%;
+  }
+}
+
+.productTabImage {
+  width: 50%;
+  @media only screen and (max-width: 1220px) {
+    width: 100%;
+  }
+}
+.productsTabTitle {
+  font-family: TTCommons-Bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+  width: fit-content;
+  @media only screen and (max-width: 1220px) {
+
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+}
+.productTabTextContainer {
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 40%;
+  @media only screen and (max-width: 1220px) {
+    margin-right: unset;
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.productsTabText {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  margin-bottom: 0px;
+  white-space: pre-line;
+  width: 100%;
+  max-width: 800px;
+
+  border-bottom: 1px solid #8080801c;
+  margin-bottom: 5px;
+  &:nth-last-child(2) {
+    border-bottom: none;
+  }
+  @media only screen and (max-width: 1220px) {
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.flexText {
+  width: 50%;
+}
+.learnMoreLinkHome {
+  p {
+    margin-bottom: 0px;
+  }
+  display: flex;
+  color: black;
+  align-items: center;
+  font-family: TTCommons-Bold;
+  font-size: 18px;
+  /* margin-top: 36.5px; */
+  margin-bottom: 0px;
+  float: right;
+  position: absolute;
+  right: 0;
+  &:hover {
+    .yellowArrowImg {
+      filter: invert(1);
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    margin-top: -7px;
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 400px) {
+    margin-top: -12px;
+    height: 48px;
+  }
+}
+.learnMoreLink {
+  display: flex;
+  color: black;
+  font-family: TTCommons-Bold;
+  font-size: 18px;
+  margin-top: 36.5px;
+
+}
+.allText{
+  margin-right:unset;
+  width: 100%;
+}
+.learnMoreLink {
+  &:hover {
+    .yellowArrowImg {
+      filter: invert(1);
+    }
+  }
+}
+
+.yellowArrowImg {
+  margin-top: -10px;
+  transition: 0.3s all;
+  margin-left: 14px;
+
+  @media only screen and (max-width: 400px) {
+    margin-top: unset;
+    font-size: 14px;
+    display: none;
+  }
+}
+
+.productsTabContainer {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+  width: 100%;
+  @media only screen and (max-width: 1220px) {
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.casementStyleCategoryContainer {
+  display: flex;
+}
+
+//Book A Consultant Button
+.consultantContainer {
+  background-color: #f2ff56;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 236.5px;
+  border: none;
+  transition: 0.3s;
+  z-index: 10;
+
+  @media only screen and (max-width: 1100px) {
+    width: 200.5px;
+  }
+}
+
+.consultantContainer:hover {
+  background-color: #f6ff65;
+}
+
+.consultImage {
+  padding-right: 5px !important;
+}
+
+.consultantText {
+  font-family: TTCommons-Bold;
+  margin-left: 13px;
+  margin-top: unset;
+  margin-bottom: unset;
+  font-size: 14px;
+  line-height: 14px;
+  color: black;
+}

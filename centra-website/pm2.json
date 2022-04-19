@@ -1,0 +1,13 @@
+{
+	"apps": [
+		{
+			"name": "centra-website",
+			"script": "node_modules/next/dist/bin/next",
+			"log_date_format" : "YYYY-MM-DD HH:mm Z",
+			"args": "start",
+			"cwd": "./",
+			"instances": "max",
+			"exec_mode": "cluster"
+		}
+	]
+}

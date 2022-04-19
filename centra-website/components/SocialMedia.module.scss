@@ -1,0 +1,192 @@
+.arrowBack {
+  transform: rotate(180deg);
+}
+
+.buttonLeft {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  @media only screen and (max-width: 1100px) {
+    top: 38%;
+  }
+}
+
+.buttonRight {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  @media only screen and (max-width: 1100px) {
+    top: 38%;
+  }
+}
+
+// social
+.socialContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.socialTitle {
+  font-family: "TTCommons-Bold";
+  font-size: 52px;
+  width: 100%;
+  max-width: 100%;
+
+  @media only screen and (max-width: 990px) {
+    font-size: 46px;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 40px;
+  }
+}
+
+.socialText {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  max-width: 830px;
+  width: 100%;
+  padding-right: 10%;
+}
+
+.socialCategoryText {
+  cursor: pointer;
+  font-family: TTCommons-Bold;
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-right: 50px;
+  width: fit-content;
+  transition: 0.3s border-bottom;
+  &:hover {
+    border-bottom: 2px solid #005cb950;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 18px;
+    margin-right: 15px;
+    width: min-content;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+.activeCategory {
+  border-bottom: 2px solid #005db9;
+  height: fit-content;
+}
+
+.socialCategoryContainer {
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 50px;
+  @media only screen and (max-width: 600px) {
+    margin-right: 5%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-right: 2%;
+  }
+}
+
+.socialHeader {
+  font-family: TTCommons-Bold;
+  font-size: 28px;
+  margin-bottom: 0px;
+  margin-right: 50px;
+  width: fit-content;
+  @media only screen and (max-width: 960px) {
+    max-width: 350px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 200px;
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 16px;
+  }
+}
+
+.socialContentContainer {
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.learnMoreLink {
+  display: flex;
+}
+
+.learnMoreText {
+  color: black;
+  font-family: TTCommons-Bold;
+  font-size: 16px;
+  width: 100px;
+
+  @media only screen and (max-width: 700px) {
+    margin-right: unset;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 94px;
+  }
+}
+.learnMoreLink {
+  &:hover {
+    .yellowArrowImg {
+      filter: invert(1);
+    }
+  }
+}
+
+.yellowArrowImg {
+  margin-top: 2px;
+  transition: 0.3s all;
+  margin-left: 2px;
+}
+//insta
+
+.image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  @media only screen and (max-width: 1172px) {
+    margin-right: unset;
+    margin-bottom: 50px;
+  }
+}
+.twitterContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+//familyImage
+
+.familyImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  @media only screen and (max-width: 1172px) {
+    margin-right: unset;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 560px) {
+    width: 100%;
+  }
+}
+
+.itemFb {
+  width: 515px !important;
+  margin-right: 10px;
+}
+
+.hide {
+  opacity: 0;
+  height: 0;
+}
+
+.twitter {
+  height: 800px;
+}

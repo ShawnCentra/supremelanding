@@ -1,0 +1,796 @@
+//breadcrumb
+.breadcrumb {
+  position: absolute;
+  z-index: 1;
+  margin-left: 40px;
+  top: 180px;
+  left: 0;
+  @media only screen and (max-width: 960px) {
+    top: 80px;
+  }
+}
+
+.breadcrumbItem {
+  color: #fff !important;
+  font-size: 14px;
+  font-family: TTCommons-DemiBold;
+  cursor: pointer;
+  &::before {
+    color: #fff !important;
+  }
+}
+
+.breadcrumbItem .active {
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.breadcrumb ol {
+  background-color: unset !important;
+}
+
+.breadcrumb ol > li > a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonLeft {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+}
+.buttonRight {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+}
+.arrowMargin {
+  margin-left: 10px;
+}
+.arrowBlack {
+  transition: 0.3s all;
+  &:hover {
+    filter: invert(1);
+  }
+  @media only screen and (max-width: 500px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.arrowBack {
+  transform: rotate(180deg);
+}
+//Header
+.headerImage {
+  // object-fit: fill!important;
+  // width: 100%;
+  // height: fit-content;
+  // z-index: -1;
+  // position: absolute;
+  // filter: brightness(0.7);
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+  object-fit: cover;
+
+  position: absolute;
+  filter: brightness(0.7);
+}
+.headerBg {
+  height: 1000px;
+  margin-top: -86px;
+  position: relative;
+  @media only screen and (max-width: 960px) {
+    height: 100%;
+    margin-top: unset;
+  }
+}
+
+.spacingContainer {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 960px) {
+    height: 100%;
+  }
+}
+
+.containerCenterMiddle {
+  padding: 110px;
+  // align-items: center; use only if you need everything aligned in center
+  height: 100%;
+
+  @media only screen and (max-width: 600px) {
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.divider {
+  margin-top: 29.5px;
+  margin-bottom: 29.5px;
+  height: 1px;
+  border: 1px solid #d8d8d8;
+}
+
+.headerSubtitle {
+  font-family: TTNorms-Bold;
+  font-size: 14px;
+  color: white;
+}
+
+.SealImage {
+  align-self: center;
+  margin-bottom: 50px;
+  /* padding-bottom: 50px; */
+  float: right;
+  margin-top: -81px;
+}
+
+.flexUnset {
+  justify-content: unset;
+  align-items: unset;
+  margin-top: 175px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.workTextContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.workHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.workTextContainer {
+  text-align: center;
+  margin-bottom: 34px;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  @media only screen and (max-width: 960px) {
+    width: 85%;
+  }
+}
+
+.meetCentraFamilyLink {
+  &:hover {
+    .arrowBlack {
+      filter: invert(1);
+    }
+  }
+}
+
+.learnMoreLink {
+  &:hover {
+    .arrowBlack {
+      filter: invert(1);
+    }
+  }
+}
+
+.arrowDownBlack {
+  position: absolute;
+  right: 15%;
+  @media only screen and (max-width: 1400px) {
+    right: 1%;
+  }
+  @media only screen and (max-width: 960px) {
+    padding: 34px;
+    right: 0px;
+    top: 151px;
+  }
+
+  @media only screen and (max-width: 740px) {
+    display: none;
+  }
+}
+
+.arrowBlack {
+  transition: 0.3s all;
+  margin-left: 20px;
+}
+.headerCTAContainer {
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.whiteArrow {
+  margin-right: 20px;
+  margin-top: -20px;
+  position: absolute;
+  left: -100px;
+}
+.headerTitle {
+  margin-top: 300px;
+  font-family: "TTNORMS-BOLD";
+  font-size: 84px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  width: 80%;
+
+  @media only screen and (max-width: 1300px) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 960px) {
+    margin-top: 200px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 42px;
+  }
+}
+.headerText {
+  font-family: TTNorms-Regular;
+  font-size: 24px;
+  color: white;
+  z-index: 1;
+  @media only screen and (max-width: 450px) {
+    font-size: 18px;
+  }
+}
+
+//Fixed header
+
+.headerRightAlignedContainer {
+  background: #005db9;
+  width: 900px;
+  height: 420px;
+
+  margin-top: -400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 0;
+  @media only screen and (max-width: 960px) {
+    margin-top: unset;
+    min-height: 400px;
+    margin-bottom: unset;
+    width: 100%;
+    height: auto;
+    margin-bottom: 47px;
+    
+  }
+}
+
+.geekPadding {
+  padding: 187px 148px 147px 118px;
+
+  @media only screen and (max-width: 1350px) {
+    padding: 110px;
+  }
+  @media only screen and (max-width: 1100px) {
+    padding: 110px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 50px;
+  }
+}
+
+.arrowButtonContainer {
+  display: flex;
+}
+
+.buttonContainer {
+  z-index: 1;
+  margin-top: 47px;
+  margin-left: 20px;
+}
+.arrowImage {
+  z-index: 1;
+}
+
+.consultantButton {
+  background-color: #f2ff56;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: fit-content;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+//text
+.centerText {
+  width: 90%;
+  text-align: center;
+}
+.title {
+  font-size: 52px;
+  font-family: TTCommons-Bold;
+  @media only screen and (max-width: 650px) {
+    font-size: 44px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+}
+
+.category {
+  font-size: 14px;
+  font-family: TTCommons-DemiBold;
+  color: #005db9;
+  margin-top: 10px;
+  width: 90%;
+  @media only screen and (max-width: 650px) {
+    margin-top: 28px;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+.workTitle {
+  font-size: 32px;
+  font-family: TTCommons-Bold;
+  width: 90%;
+
+  @media only screen and (max-width: 650px) {
+    width: 95%;
+    margin-left: 2%;
+  }
+}
+
+.workVideosContainer {
+  display: flex;
+  margin-bottom: 104.5px;
+  justify-content: center;
+  @media only screen and (max-width: 1100px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.awardsVideoContainer {
+  width: 100%;
+}
+.workVideosContent {
+  width: 50%;
+  margin: 16px;
+  @media only screen and (max-width: 1100px) {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 68%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
+}
+
+.ownersContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.ownerLineContainer {
+  position: relative;
+  padding-left: 2%;
+  padding-right: 2%;
+  @media only screen and (max-width: 1275px) {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 700px) {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 40px;
+  }
+}
+
+.ownersText {
+  font-size: 24px;
+  font-family: TTCommons-DemiBold;
+  color: #005db9;
+  width: 95%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.ownersTitle {
+  font-size: 104px;
+  font-family: TTCommons-Bold;
+  height: 152px;
+  margin-bottom: 0px;
+  @media only screen and (max-width: 750px) {
+    font-size: 44px;
+    height: 82px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.consultantButtonRotatingImages {
+  background-color: #f2ff56;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 35px;
+}
+
+.consultantButtonTextRotatingImages {
+  margin: unset !important;
+  padding-left: 10px;
+  font-family: "TTNorms-Bold";
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+
+.awardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+  padding-top: 180px;
+  background-color: #fafafa;
+  padding-left: 10%;
+  padding-right: 10%;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.awardTextContainer {
+  margin-right: 128px;
+  width: 448px;
+  @media only screen and (max-width: 1200px) {
+    margin-right: unset;
+    margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 660px) {
+    width: 94%;
+  }
+}
+
+.awardTitle {
+  font-size: 32px;
+  font-family: TTCommons-Bold;
+}
+
+.awardText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+}
+
+.missionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.missionTitle {
+  font-size: 52px;
+  font-family: TTCommons-Bold;
+  width: 65%;
+  text-align: center;
+  @media only screen and (max-width: 940px) {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.missionSubtitle {
+  font-size: 20px;
+  font-family: TTCommons-Bold;
+  margin-top: 20px;
+}
+
+.missionText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+}
+
+.missionCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 38px;
+  justify-content: center;
+}
+
+.missionCard {
+  margin: 14.5px;
+  width: 353px;
+  height: 350px;
+  padding: 48px 64px 0px 64px;
+  margin-bottom: 20px;
+  background-color: #f2ff56;
+}
+
+.benefitsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.benefitsFlexContainer {
+  display: flex;
+
+  @media only screen and (max-width: 1130px) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 530px) {
+    width: 100%;
+  }
+}
+.benefitsTitleContainer {
+  text-align: center;
+  width: 80%;
+}
+
+.benefitsTitle {
+  font-size: 52px;
+  font-family: TTCommons-Bold;
+}
+
+.benefitsText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.benefitsContentText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+  max-width: 750px;
+  width: 500px;
+
+  @media only screen and (max-width: 1130px) {
+    width: 95%;
+    max-width: unset;
+  }
+}
+
+.benefitsImg {
+  width: 100%;
+  height: 467px;
+  object-fit: cover;
+}
+
+.blogContentContainer {
+  margin-top: 71px;
+  margin-bottom: 71px;
+}
+
+.benefitsContentContainer {
+  margin: 12px;
+
+  @media only screen and (max-width: 575px) {
+    margin-top: 60px;
+  }
+  &:nth-of-type(1) {
+    margin-top: 10px;
+  }
+}
+.benefitsSubtitle {
+  font-size: 28px;
+  font-family: TTCommons-Bold;
+  margin-top: 20px;
+}
+
+.cultureContainer {
+  padding-top: 30px;
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 960px) {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+
+.cultureTitle {
+  font-size: 52px;
+  font-family: TTCommons-Bold;
+  width: fit-content;
+}
+
+.cultureText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+  width: 500px;
+  @media only screen and (max-width: 960px) {
+    width: 95%;
+  }
+}
+
+.blogContainer {
+  margin-left: 13px;
+  display: flex;
+  @media only screen and (max-width: 960px) {
+    margin-left: unset;
+    margin-top: 30px;
+  }
+  &:hover {
+    .blogLink {
+      text-decoration: underline;
+    }
+
+    .blogArrowImg {
+      filter: invert(1);
+    }
+  }
+}
+.blogLink {
+  font-family: TTCommons-Bold;
+  font-size: 18px;
+  margin-right: 10px;
+  width: 128px;
+}
+.blogArrowImg {
+  margin-top: -10px;
+  transition: 0.3s all;
+}
+
+.blogCarousel {
+  overflow-x: auto;
+
+  ul {
+    width: max-content !important;
+  }
+}
+
+.equalContainer {
+  display: flex;
+  background-color: #005db9;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  padding-top: 112px;
+  padding-bottom: 72px;
+  justify-content: center;
+
+  @media only screen and (max-width: 675px) {
+    justify-content: unset;
+    flex-direction: column;
+  }
+}
+
+.equalContentContainer {
+  width: 520px;
+  @media only screen and (max-width: 675px) {
+    width: 100%;
+  }
+}
+
+.equalContentContainer:nth-child(2) {
+  padding-left: 56px;
+  @media only screen and (max-width: 675px) {
+    margin-top: 50px;
+    padding-left: unset;
+  }
+}
+
+.equalTitle {
+  color: white;
+  font-family: TTCommons-Bold;
+  font-size: 52px;
+}
+
+.equalText {
+  color: white;
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+}
+
+.learnMoreLink {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.equalLink {
+  color: white;
+  font-family: TTCommons-Bold;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.lifeContainer {
+  margin-top: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 500px) {
+    align-items: unset;
+    margin-left: 2%;
+  }
+}
+
+.lifeTitle {
+  font-family: TTCommons-Bold;
+  font-size: 52px;
+  margin-bottom: unset !important;
+
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 10px !important;
+  }
+}
+
+.lifeSubtitle {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  margin-top: -10px;
+  color: black;
+  margin-right: 10px;
+}
+
+.lifeLink {
+  display: flex;
+  align-items: baseline;
+  font-family: TTCommons-Bold;
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.instaBlogSlider {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.instagramSlideContainer {
+  width: 450px !important;
+  padding-bottom: 0px !important;
+  height: 480px !important;
+}
+
+.instaBlogSlider {
+  padding-left: 0px !important;
+}
+.instagramImg {
+  object-fit: cover;
+  object-position: top;
+}

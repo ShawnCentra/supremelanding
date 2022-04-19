@@ -1,0 +1,44 @@
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+.placeHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  animation: loadingAnimation 1s infinite;
+}
+
+.styledImage{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.styleRelative{
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}

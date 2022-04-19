@@ -1,0 +1,319 @@
+//breadcrumb
+.breadcrumb {
+  position: absolute;
+  z-index: 1;
+  margin-left: 40px;
+  top: 180px;
+  left: 0;
+  @media only screen and (max-width: 960px) {
+   margin-left:unset;
+  }
+}
+
+.breadcrumbItem {
+  color: #fff !important;
+  font-size: 14px;
+  font-family: TTCommons-DemiBold;
+cursor:pointer;
+  &::before {
+    color: #fff !important;
+  }
+}
+
+.breadcrumbItem .active {
+  color: #fff !important; cursor:pointer;
+}
+.breadcrumb ol {
+  background-color: unset !important;
+}
+
+.breadcrumbItem::before {
+  color: #fff !important;
+}
+
+.breadcrumb ol > li > a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.arrowContainer {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media only screen and (max-width: 1220px) {
+    position: relative;
+    width: 300px;
+    height: 120px;
+  }
+}
+
+//Header
+.headerImage {
+  // object-fit: fill!important;
+  // width: 100%;
+  // height: fit-content;
+  // z-index: -1;
+  // position: absolute;
+  // filter: brightness(0.7);
+  width: 100%;
+  height: inherit;
+  z-index: 0;
+  object-fit: cover;
+
+  position: absolute;
+  filter: brightness(0.7);
+}
+
+.spacingContainer {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 700px) {
+  }
+}
+
+.containerCenterMiddle {
+  padding: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center; use only if you need everything aligned in center
+  height: 100%;
+min-height:400px;
+}
+
+.headerTitle {
+  margin-top: 350px;
+  font-family: "TTNORMS-BOLD";
+  font-size: 84px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  width: 80%;
+
+  @media only screen and (max-width: 1300px) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 42px;
+  }
+}
+.headerText {
+  font-family: TTNorms-Regular;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  @media only screen and (max-width: 450px) {
+    font-size: 18px;
+  }
+}
+
+.headerText404 {
+  font-family: TTNorms-Bold;
+  font-size: 52px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+//Fixed header
+.headerBg {
+  height: 1000px;
+  margin-top: -86px;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerRightAlignedContainer {
+  background: #005db9;
+  width: 900px;
+  height: 420px;
+  position: sticky;
+  float: right;
+  margin-top: -400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: 1220px) {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 47px;
+    float: unset;
+    margin-top: -350px;
+  }
+}
+
+.geekPadding {
+  padding: 187px 148px 147px 118px;
+
+  @media only screen and (max-width: 1350px) {
+    padding: 110px;
+  }
+  @media only screen and (max-width: 1100px) {
+    padding: 110px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 50px;
+  }
+}
+.headerSubtitle {
+  font-family: TTNorms-Bold;
+  font-size: 14px;
+  color: white;
+}
+//casement windows
+.caseImage {
+  height: 574px;
+  width: 375px;
+  margin-top: -379px;
+}
+
+.viewImage {
+  height: 128px;
+  margin-top: -65px;
+  margin-left: 30px;
+}
+
+.arrowImage {
+  margin-left: -10px;
+  height: 128px;
+  position: absolute;
+  margin-top: 100px;
+  right: -73px;
+}
+
+.headerTextContainer {
+  position: relative;
+  display: flex;
+}
+
+.headerImageContainer {
+  background-color: #f2f5f7;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+}
+
+.threeImage {
+  height: 332px;
+  width: 137px;
+}
+
+.threeImagesContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.flexContainer {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  @media only screen and (max-width: 960px) {
+    flex-direction: column !important;
+  }
+}
+
+//premium
+
+.premiumContainer {
+  background-color: #f2ff56;
+  display: flex;
+  flex-direction: column;
+}
+
+.premiumContentContainer {
+  width: 415px;
+  margin: 40px 10px 30px 10px;
+
+  @media only screen and (max-width: 960px) {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+.premiumTitle {
+  font-family: TTCommons-Bold;
+  font-size: 32px;
+}
+
+.premiumText {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  width: 90%;
+  max-width: 800px;
+}
+.premiumTextWrap {
+  white-space: pre-line;
+}
+.numberFlex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+.number {
+  font-family: "TTCommons-Bold";
+  font-size: 22px;
+  margin-right: 5px;
+}
+.premiumHeight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 960px) {
+    width: 100%;
+  }
+}
+
+.premiumFullImage {
+  width: 100%;
+  object-fit: cover;
+  height: 961px;
+}
+
+//screens
+.screensContainer {
+  padding-left: 10%;
+  padding-right: 10%;
+
+  width: 100%;
+
+  margin-top: 124px;
+  margin-bottom: 174px;
+
+  @media only screen and (max-width: 1260px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 960px) {
+    margin-top: 55px;
+  }
+}
+
+.flexRowReverse {
+  flex-direction: row-reverse;
+}
+
+.screensTitleContainer {
+  max-width: 800px;
+  width: 90%;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}

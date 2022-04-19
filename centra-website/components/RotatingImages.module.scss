@@ -1,0 +1,281 @@
+.disableButton {
+  display: none !important;
+}
+//New Carousel
+.arrowBlack {
+  &:hover {
+    filter: invert(1);
+  }
+}
+
+.buttonLeft {
+  position: absolute;
+}
+
+.buttonRight {
+  position: absolute;
+
+  right: 65px;
+}
+
+.arrowBlack {
+  position: absolute;
+  transition: 0.3s all;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.arrowBack {
+  transform: rotate(180deg);
+}
+
+//////New Carousel end
+//Family Section
+
+.consultantButtonRotatingImages {
+  background-color: #f2ff56;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 236.5px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 35px;
+}
+
+.consultantButtonTextRotatingImages {
+  margin: unset !important;
+  padding-left: 10px;
+  font-family: "TTNorms-Bold";
+  font-size: 14px;
+  color: black;
+}
+
+.familyContainer {
+  padding-top: 200px;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 200px;
+
+  width: 100%;
+
+  @media only screen and (max-width: 1350px) {
+    width: 65%;
+  }
+  @media only screen and (max-width: 1100px) {
+    padding-top: 60px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 60px;
+  }
+}
+
+.familyTextContainer {
+  margin-right: 6%;
+  width: 457px;
+  @media only screen and (max-width: 1100px) {
+    width: 80%;
+  }
+  @media only screen and (min-width: 1500px) {
+    margin-right: 15%;
+  }
+}
+
+.familyTitle {
+  font-family: TTNorms-Bold;
+  font-size: 52px;
+  line-height: 1.15;
+
+  @media only screen and (max-width: 960px) {
+    font-size: 44px;
+  }
+}
+
+.familyText {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.familyImgContainer {
+  max-width: 12px;
+  margin-left: 50px;
+  position: relative;
+  @media only screen and (max-width: 1240px) {
+    margin-left: 100px;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    width: 300px;
+    margin: 0 auto;
+    position: unset;
+    height: 350px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.leftImage {
+  position: absolute;
+  margin-left: -52px;
+  transform: rotate(-20deg);
+  margin-top: 30px;
+  transition: all 0.3s;
+  @media only screen and (max-width: 1240px) {
+    width: 285px;
+    height: 355px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 230px;
+    height: 300px;
+  }
+}
+.centerImage {
+  position: absolute;
+  margin-top: 45px;
+  z-index: 5;
+  transition: all 0.3s;
+  @media only screen and (max-width: 1240px) {
+    width: 285px;
+    height: 355px;
+    margin-left: -25px;
+    margin-top: 35px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 230px;
+    height: 300px;
+    margin-left: 0px;
+  }
+}
+.rightImage {
+  position: absolute;
+  transition: all 0.3s;
+  transform: rotate(21deg);
+  margin-top: 40px;
+  margin-left: 30px;
+  @media only screen and (max-width: 1240px) {
+    width: 285px;
+    height: 355px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 230px;
+    height: 300px;
+    margin-left: 0px;
+  }
+}
+
+//Image rotate styles
+.topImage {
+  z-index: 300 !important;
+  transform: rotate(0deg);
+  transition: 0.3s all;
+  margin: unset;
+  opacity: 1;
+}
+
+.middleImage {
+  margin-left: -31px !important;
+  margin-top: 15px !important;
+  transform: rotate(-20deg);
+  transition: 0.3s all;
+  z-index: 200;
+  opacity: 0.5;
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px !important;
+    height: 280px;
+  }
+}
+
+.bottomImage {
+  z-index: 100;
+  transform: rotate(21deg);
+  transition: 0.3s all;
+  margin-top: 15px !important;
+  margin-left: 30px !important;
+  opacity: 0.5;
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px !important;
+    height: 280px;
+    margin-top: 0px !important;
+  }
+}
+
+.imageRotateButton {
+  border: none;
+  background: none;
+  z-index: 500;
+  position: absolute;
+  margin-top: 285px;
+  right: -500px;
+  transition: 0.3s;
+  &:hover {
+    filter: invert(1);
+  }
+  @media only screen and (max-width: 1240px) {
+    margin-top: 165px;
+    margin-left: 220px;
+    right: unset;
+  }
+}
+
+//familycaarousel
+.familyCarousel {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 100px;
+  height: 500px;
+  @media only screen and (max-width: 400px) {
+    margin-bottom: 100px;
+  }
+}
+
+.familySlideContainer {
+  width: 352px !important;
+  padding-bottom: 420px !important;
+  @media only screen and (max-width: 450px) {
+    width: 275px !important;
+  }
+}
+
+.familyContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s all;
+  margin-right: 23.4px;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  &:hover {
+    filter: drop-shadow(4px 3px 5px black);
+  }
+}
+
+.dotContainer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 14%;
+}
+
+.dot {
+  border: none;
+  background: #005db9;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  &:disabled {
+    filter: contrast(0.1) !important;
+  }
+}

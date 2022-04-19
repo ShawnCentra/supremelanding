@@ -1,0 +1,229 @@
+.buttonContainer {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.centerFilters {
+}
+.buttonActive {
+  transition: 0.3s all;
+  background: #005db9 !important;
+  color: white !important;
+  border: 2px solid #005db9;
+  span {
+    color: white !important;
+  }
+}
+.filter {
+  color: grey;
+  font-family: "TTCommons-Bold";
+  margin: 0 auto;
+  margin: 0 auto;
+  max-width: 1500px;
+  margin-left: 10%;
+}
+.spinnerContainer {
+  margin: 0 auto;
+  height: 1000px;
+  text-align: center;
+}
+.button {
+  font-family: "TTCommons-Bold";
+  font-size: 14px;
+  border: 2px solid #005db9;
+  margin: 10px;
+  color: #005db9;
+
+  text-decoration: none;
+
+  width: fit-content;
+  min-width: 80px;
+  height: 64px;
+  position: relative;
+
+  background-color: #fff;
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #005cb9b8;
+    transform-origin: 0 bottom 0;
+    transform: scaleY(0);
+    transition: 0.4s ease-out;
+  }
+
+  &:hover {
+    .buttonTitle {
+      color: #fff;
+    }
+    &:before {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.buttonTitle {
+  color: #005db9;
+  position: relative;
+  font-size: 14px;
+  transition: 0.4s ease-out;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.loadMoreButton {
+  background-color: #005db9;
+  width: 237px;
+  height: 64px;
+  border: none;
+  color: white;
+  font-family: TTCommons-Bold;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 70px;
+  transition: 0.3s all;
+  &:hover {
+    background-color: #0273e2;
+  }
+  &:disabled {
+    display: none;
+  }
+}
+
+.learnMoreButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 153px;
+}
+
+.contentTitle {
+  font-family: "TTCommons-Bold";
+  font-size: 52px;
+  margin-bottom: 89px;
+  display: flex;
+  justify-content: center;
+}
+
+.contentSubtitle {
+  color: #005db9;
+  font-family: "TTCommons-DemiBold";
+  font-size: 14px;
+}
+
+.contentText {
+  font-family: "TTCommons-Bold";
+  font-size: 18px;
+}
+
+.trendingNowContainer {
+  width: 25%;
+  margin-left: 10%;
+}
+
+.divider {
+  margin-top: 29.5px;
+  margin-bottom: 29.5px;
+  height: 1px;
+  border: 1px solid #d8d8d8;
+}
+
+.trendingTitle {
+  font-family: "TTCommons-Bold";
+  font-size: 32px;
+}
+
+.trendingText {
+  font-family: "TTCommons-Bold";
+  font-size: 20px;
+}
+
+.contentContainer {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contentImgContainer:nth-child(2n + 2) {
+  margin-top: 62px;
+}
+
+.contentImgContainer {
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .contentImg {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.yellowContainer {
+  width: 136px;
+  height: 60px;
+  background-color: #f2ff56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  z-index: 1;
+}
+
+.yellowContainerText {
+  font-family: "TTCommons-DemiBold";
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.contentImg {
+  width: 511px;
+  height: 331px;
+  object-fit: cover;
+  transition: 0.3s all;
+
+  @media only screen and (max-width: 1250px) {
+    width: 435px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    width: 100%;
+  }
+}
+
+.trendingContentContainer {
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    .borderLeft {
+      opacity: 1;
+    }
+  }
+}
+
+.borderLeft {
+  opacity: 0;
+  border-left: 8px solid #005db9;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: -25px;
+  transition: 0.3s all;
+}
+
+.contentImgBox {
+  height: 331px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}

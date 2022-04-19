@@ -1,0 +1,488 @@
+.filterGalleryContainer {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.loadMoreButton {
+  background-color: #005db9;
+  width: 237px;
+  height: 64px;
+  border: none;
+  color: white;
+  font-family: TTCommons-Bold;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 70px;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: #0273e2;
+  }
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.filterContainer {
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+
+.filterTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  text-align: center;
+}
+.textContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+.centerContent {
+  justify-content: center;
+  max-width: 1300px !important;
+  margin: 0 auto;
+}
+//Fonts
+.filterSubtitle {
+  font-family: TTCommons-DemiBold;
+  font-size: 20px;
+  color: #005db9;
+  margin: 0px;
+  margin-top: 80px;
+}
+
+.filterTitle {
+  font-family: TTCommons-Bold;
+  font-size: 52px;
+  max-width: fit-content;
+  margin-bottom: 20px !important;
+  @media only screen and (max-width: 1100px) {
+    max-width: 600px;
+  }
+  @media only screen and (max-width: 940px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 620px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 460px) {
+    font-size: 40px;
+  }
+}
+
+.filterText {
+  font-family: TTCommons-Regular;
+  font-size: 18px;
+  max-width: 560px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.filterContentSubtitle {
+  font-family: TTCommons-Bold;
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.filterWidth {
+  width: 100%;
+  max-width: 450px;
+  @media only screen and (max-width: 610px) {
+    width: 90%;
+  }
+}
+
+//gallery
+.filterGalleryContentContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.filterGalleryImageContentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 2060px;
+  margin: 0 auto;
+  @media only screen and (max-width: 610px) {
+    display: unset;
+  }
+}
+
+.landscapeContentContainer {
+  margin-right: unset !important;
+}
+.imageContainer {
+  width: 500px;
+  height: 300px;
+  margin: 5px;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.3s all;
+}
+
+.galleryContentContainer {
+  margin-top: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    .galleryImage {
+      transform: scale(1.03);
+      position: relative;
+      z-index: 2;
+    }
+  }
+  @media only screen and (max-width: 1190px) {
+    margin-right: unset;
+    align-items: center;
+  }
+}
+
+.learnMoreButtonContainer {
+  max-width: 1350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+//input fields
+
+.inputBoxContainer {
+  margin-top: 46px;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 1190px) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.hideButton {
+  display: none;
+}
+
+.inputBox {
+  margin-top: 7.5px;
+  width: 194px;
+  margin-right: 7.5px;
+  padding: 26px 26px 26px 27px;
+  border: 2px solid black;
+  background: none;
+  &::after {
+    margin-right: 20px;
+  }
+  @media only screen and (max-width: 1190px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 40%;
+  }
+  @media only screen and (max-width: 900px) {
+    max-width: 450px;
+  }
+}
+
+.dropDownText {
+  font-family: TTCommons-Bold;
+  font-size: 14px;
+}
+
+//modal
+
+.modal {
+  width: 100% !important;
+  max-width: unset;
+  height: 100vh;
+  margin: 0 !important;
+  z-index: 30000;
+}
+
+.modalContent {
+  border-radius: unset;
+  border: unset;
+  height: 100vh;
+  flex-direction: row;
+  @media only screen and (max-width: 1220px) {
+    flex-direction: column-reverse;
+    height: unset;
+  }
+}
+
+.modalImage {
+  height: auto;
+  width: auto;
+
+  object-fit: contain;
+}
+.modalImageContainer {
+  max-height: 100vh;
+}
+
+.noItemsText {
+  font-family: "TTCommons-DemiBold";
+  font-size: 28px;
+}
+.contentLeft {
+  width: 70%;
+  background: #000000e0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 1220px) {
+    width: 100%;
+    height: 90vh;
+  }
+}
+
+.doorsSpacer {
+  height: 200px;
+  @media only screen and (max-width: 1220px) {
+    display: none;
+  }
+}
+.contentRight {
+  width: 30%;
+  padding-left: 50px;
+  padding-top: 100px;
+  padding-right: 50px;
+  @media only screen and (max-width: 1220px) {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+}
+
+.modalTitle {
+  color: black;
+  font-family: "TTCommons-DemiBold";
+  font-size: 28px;
+  max-width: 420px;
+  @media only screen and (max-width: 1220px) {
+    max-width: unset;
+    font-size: 24px;
+
+  }
+}
+
+.modalText {
+  color: black;
+  font-family: TTCommons-Regular;
+  font-size: 24px;
+  @media only screen and (max-width: 1220px) {
+    font-size: 20px;
+  }
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tag {
+  color: white;
+  font-weight: 600;
+  background-color: black;
+  padding: 7px 10px 7px 10px;
+  border-radius: 24px;
+  font-size:14px;
+  margin: 5px;
+  @media only screen and (max-width: 1220px) {
+   
+    border-radius: 43px;
+    margin: 2px;
+
+  }
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  @media only screen and (max-width: 1220px) {
+    margin-top: unset;
+  }
+}
+.linkHeader {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: TTCommons-Regular;
+}
+.linksFlex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  @media only screen and (max-width: 1220px) {
+    margin-bottom: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.link {
+  width: fit-content;
+  margin: 3px;
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  &:hover {
+    text-decoration: unset;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 450px) {
+    max-width: 185px;
+  }
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+//.closeButton
+
+.close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  transition: all 0.5s;
+  padding: 30px;
+  background: black;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  bottom: 12px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  transition: all 0.5s;
+  background-color: rgb(255, 255, 255);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.close:hover::before,
+.close:hover::after {
+  transition: all 0.5s;
+  transform: rotate(90deg);
+}
+
+//arrows
+.buttonArrow {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.svgIcon {
+  padding: 5px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+
+.left {
+  left: 50px;
+}
+
+.right {
+  right: 20px;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.poly {
+  transition: all 250ms ease-in-out;
+  @media only screen and (max-width: 1220px) {
+    stroke-width: 4;
+  }
+}
+.dontShow {
+  display: none;
+}
+.social {
+  display: flex;
+  width: 285px;
+  justify-content: space-between;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  &:hover {
+    border: 2px solid black;
+    padding: 3px;
+  }
+}

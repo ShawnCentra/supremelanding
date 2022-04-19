@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <body class="container">
+    <img src="/images/supportedBrowsers/man.png" class="manImage" />
+
+    <h1 class="headerText">Your browser is outdated and unsupported. :(</h1>
+    <h1 class="headerText">Click the link below to update it.</h1>
+    <a class="linkText" href="https://browser-update.org/update-browser.html"
+      >Update Browser</a
+    >
+
+    <div class="logosWrapper">
+      <div class="logoContainer">
+        <img src="/images/supportedBrowsers/ie.png" class="imageUnsupported" />
+        <p class="logoText">Internet Explorer (Unsupported)</p>
+      </div>
+      <div class="logoContainer">
+        <img
+          src="/images/supportedBrowsers/edge.png"
+          class="imageUnsupported"
+        />
+        <p class="logoText">Edge</p>
+      </div>
+      <div class="logoContainer">
+        <img
+          src="/images/supportedBrowsers/firefox.png"
+          class="imageUnsupported"
+        />
+        <p class="logoText">Mozilla Firefox</p>
+      </div>
+      <div class="logoContainer">
+        <img
+          src="/images/supportedBrowsers/safari.png"
+          class="imageUnsupported"
+        />
+        <p class="logoText">Safari</p>
+      </div>
+      <div class="logoContainer">
+        <img
+          src="/images/supportedBrowsers/chrome.png"
+          class="imageUnsupported"
+        />
+        <p class="logoText">Chrome</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .container {
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 80%;
+    text-align: center;
+  }
+
+  .imageUnsupported {
+    width: 64px;
+    height: 64px;
+  }
+
+  .manImage{
+      width:350px;
+      height:400px;
+
+  }
+  .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .headerText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .linkText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+
+  .logoText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  .logosWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 80px;
+    max-width: 1200px;
+  }
+  .logoContainer {
+    width: 20%;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 650px) {
+    .logoContainer {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+  }
+</style>

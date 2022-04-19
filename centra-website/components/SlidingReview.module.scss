@@ -1,0 +1,86 @@
+.referalFlexContainer {
+  display: flex;
+  justify-content: center;
+}
+.referalContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 61px;
+  align-items: center;
+}
+.referalContentContainer {
+  width: 500px;
+  text-align: center;
+  background-color: #005db9;
+  height: 288px;
+}
+
+.activeReferalContainer {
+  width: 625px !important;
+  height: 315px !important;
+  margin-top: -15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.referalText {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 20px;
+  font-family: TTCommons-Bold;
+  margin-top: 24px;
+  color: white;
+}
+.portraitImage {
+  margin-top: -40px;
+  border-radius: 100px;
+}
+
+.portraitTextBold {
+  font-size: 16px;
+  font-family: TTCommons-Bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.portraitText {
+  font-size: 16px;
+  font-family: TTCommons-Regular;
+  text-align: center;
+}
+
+.quoteImage {
+  margin-top: 44px;
+}
+//referal section
+.arrowBlack {
+  &:hover {
+    filter: invert(1);
+  }
+}
+
+.arrowBack {
+  transform: rotate(180deg);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.buttonLeft {
+  position: absolute;
+  left: 5%;
+}
+
+.buttonRight {
+  position: absolute;
+  right: 5%;
+}
+
+.sayingSlideContainer{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 500px;
+}

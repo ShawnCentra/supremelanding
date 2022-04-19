@@ -1,0 +1,86 @@
+//CTA Section
+
+.yellowBg {
+  background-color: #f2ff56 !important;
+}
+
+.blackBg {
+  background-color: #272727 !important;
+}
+
+.blackText {
+  color: black !important;
+}
+
+.whiteText {
+  color: #fff !important;
+}
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  padding: 50px;
+  
+  @media only screen and (max-width: 560px) {
+    height: unset;
+  }
+}
+.ctaTitle {
+  font-family: TTCommons-Bold;
+  font-size: 32px;
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+.ctaText {
+  font-family: TTCommons-Medium;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+//Reusable CSS
+.title {
+  font-family: TTCommons-Bold;
+  font-size: 52px;
+}
+
+.contentText {
+  font-family: TTCommons-Medium;
+  font-size: 18px;
+}
+.consultantButtonText {
+  margin: unset !important;
+  padding: 25.5px;
+  font-family: TTCommons-Bold;
+  font-size: 14px;
+  color: black;
+
+  @media only screen and (max-width: 560px) {
+    padding: 15.5px;
+
+    font-size: 12px;
+  }
+}
+.consultImage {
+  margin: 10px;
+}
+
+.consultantButton {
+  background-color: #f2ff56;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: fit-content;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

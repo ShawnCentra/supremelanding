@@ -1,0 +1,237 @@
+// cares section
+
+.caresContainer {
+  padding-left: 10%;
+  padding-top: 60px;
+  padding-right: 10%;
+  background: #fafafa;
+}
+.caresFlexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.caresTextContainer {
+  margin-left: 93.5px;
+  @media only screen and (max-width: 1000px) {
+    margin-left: unset;
+  }
+}
+
+.caresArrowImgContainerBack {
+  background: #f2ff56;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+  position: absolute;
+left:1%;
+  &:hover {
+    background: #005db9;
+    .blogBackButton {
+      filter: invert(1);
+    }
+  }
+}
+
+.caresArrowImgContainerLink {
+  background: #f2ff56;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+
+  &:hover {
+    background: #005db9;
+    .caresArrowImg {
+      filter: invert(1);
+    }
+  }
+}
+.caresArrowImgContainer {
+  background: #f2ff56;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+
+  right: 1%;
+  margin-top: -10px;
+
+  &:hover {
+    background: #005db9;
+    .caresArrowImg {
+      filter: invert(1);
+    }
+  }
+  @media only screen and (max-width: 1220px) {
+    right: 1%;
+  }
+}
+
+.caresArrowImg {
+  transition: 0.3s all;
+  padding: 7.3px;
+  padding-top: 9px;
+}
+
+.carouselImageContainer{
+  width:100%;
+  height:300px;
+  display: flex;
+  justify-content: center;
+}
+
+.caresLinkContainer {
+
+  display: flex;
+  margin-bottom:30px;
+  &:hover {
+    .caresLink {
+      text-decoration: underline;
+    }
+
+    .caresArrowImg {
+      filter: invert(1);
+    }
+    .caresArrowImgContainer {
+      background: #005db9;
+    }
+
+    .caresArrowImgContainerBack {
+      background: #005db9;
+    }
+  }
+}
+
+.blogBackButton {
+  transform: rotate(178deg);
+
+  transition: 0.3s all;
+
+  padding: 7.3px;
+  padding-top: 9px;
+}
+
+.caresTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caresTitle {
+  font-family: TTCommons-Bold;
+  font-size: 32px;
+}
+
+.caresText {
+  font-family: TTCommons-Medium;
+  font-size: 18px;
+  width: 576px;
+  margin-right: 67px;
+  @media only screen and (max-width: 1100px) {
+    width: auto;
+  }
+}
+.caresLink {
+  font-family: TTCommons-Bold;
+  font-size: 18px;
+  margin-right: 13px;
+}
+
+.caresImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  column-gap: 20px;
+  row-gap: 20px;
+
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 128px;
+  margin-top: 60px;
+}
+
+.caresNavButtons {
+  position: absolute;
+  right: 10px;
+  bottom: 21%;
+}
+
+.caresDotContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.caresSlideContainer {
+  width: 300px !important;
+  padding-bottom: 30% !important;
+}
+
+.caresCarousel {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 515px;
+}
+
+.familySlideContainer {
+  width: 300px !important;
+  padding-bottom: 420px !important;
+  @media only screen and (max-width: 400px) {
+    width: 275px !important;
+  }
+}
+
+.familyContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  &:hover {
+    filter: drop-shadow(4px 3px 5px black);
+  }
+}
+
+.homeProductsImg {
+  margin-top: 76px;
+  margin-bottom: 86px;
+
+  @media only screen and (max-width: 960px) {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  @media only screen and (max-width: 798px) {
+    width: 450px !important;
+    height: 450px !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  object-fit: cover;
+}
+
+.dot {
+  border: none;
+  background: #005db9;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  &:disabled {
+    filter: contrast(0.1) !important;
+  }
+}
+.blogCarouselButton {
+  border: none;
+  background-color: unset !important;
+  transition: 0.3s all;
+}
