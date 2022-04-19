@@ -7,19 +7,15 @@ export default function CallToAction(props) {
   return (
     <div
       className={
-        props.yellow == true
-          ? styles.ctaContainer + " " + styles.yellowBg
-          : styles.ctaContainer
+        styles.ctaContainer
       }
     >
       <h2
         className={
-          props.yellow == true
-            ? styles.ctaTitle + " " + styles.blackText
-            : styles.ctaTitle
+          styles.ctaTitle
         }
       >
-        {props?.data?.title}
+        How can we help?
       </h2>
       <p
         className={
@@ -28,74 +24,27 @@ export default function CallToAction(props) {
             : styles.ctaText
         }
       >
-        {props?.data?.content}
+        You’re just getting to know us, and you may be reluctant to ask your questions openly. That’s totally understandable. We’ve created a confidential line where you can have all your questions answered anonymously and in private.
       </p>
-      {props.currentOpenings ? (
-        <a href={"/careers/current-openings/"}>
+      {props.supreme ? (
+        <a href="mailto:letstalk@centra.ca">
           <button
             className={
-              props.yellow == true
-                ? styles.consultantButton + " " + styles.blackBg
-                : styles.consultantButton
+              styles.consultantButton
             }
           >
-            {props.yellow !== true ? (
-              <img
-                loading="lazy"
-                src="/images/Shape.webp"
-                className="consultImage"
-                alt="black calendar icon"
-                width="12"
-                height="12"
-              />
-            ) : (
-              ""
-            )}
-
             <p
               className={
-                props.yellow == true
-                  ? styles.consultantButtonText + " " + styles.whiteText
-                  : styles.consultantButtonText
+
+                styles.consultantButtonText
               }
             >
-              {props?.text}
+              Contact our Anonymous Line
             </p>
           </button>
         </a>
       ) : (
-        <a href={props.charity ? "https://www.centracares.ca" : "/get-quote"}>
-          <button
-            className={
-              props.yellow == true
-                ? styles.consultantButton + " " + styles.blackBg
-                : styles.consultantButton
-            }
-          >
-            {props.yellow !== true ? (
-              <img
-                loading="lazy"
-                src="/images/Shape.webp"
-                className="consultImage"
-                alt="black calendar icon"
-                width="12"
-                height="12"
-              />
-            ) : (
-              ""
-            )}
-
-            <p
-              className={
-                props.yellow == true
-                  ? styles.consultantButtonText + " " + styles.whiteText
-                  : styles.consultantButtonText
-              }
-            >
-              {props?.text}
-            </p>
-          </button>
-        </a>
+        null
       )}
     </div>
   );

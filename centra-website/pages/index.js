@@ -26,8 +26,8 @@ const responsive = {
 };
 
 const centraCaresData = {
-  content: "Some content",
-  title: "centra cares",
+  content: "Our community is very important to us and we want to make sure that we support our new Alberta family. We will be organizing a Centra Cares charity donation based on causes you all care about. Nominate a Calgary charity of your choice by May 31st and we will provide $10,000 to the local charity! Please contact us to share with us a cause you’re passionate about that you would like us to support.",
+  title: "Centra Cares",
   images: [{ seoAlt: "Cares Image", imagePath: "/cares/group.webp" },
   { seoAlt: "Cares Image", imagePath: "/cares/group.webp" },
   { seoAlt: "Cares Image", imagePath: "/cares/group.webp" },
@@ -71,27 +71,6 @@ export default function career({ data, insta }) {
   };
   //breadcrump visibility
   const [scrollTop, setScrollTop] = useState(0);
-  const [scrolling, setScrolling] = useState(false);
-  const [parsedText, setParsedText] = useState([]);
-  const [parsedTextRest, setParsedTextRest] = useState([]);
-  useEffect(() => {
-    const onScroll = (e) => {
-      setScrollTop(e.target.documentElement.scrollTop);
-      setScrolling(e.target.documentElement.scrollTop > scrollTop);
-    };
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
-
-  useEffect(() => {
-    if (data) {
-      const arr = data[4].title.split(" ");
-      setParsedText(arr);
-      const arrRest = arr.slice(2).join(" ");
-      setParsedTextRest(arrRest);
-    }
-  }, [data]);
 
   return (
     <>
@@ -101,13 +80,13 @@ export default function career({ data, insta }) {
         */}
 
         <title>
-          {data?.[13]?.title ? data?.[13]?.title : "Centra Windows | Supreme"}
+          {"Centra Windows | Supreme"}
         </title>
         <link rel="canonical" href={`https://www.centrawindows.com/careers/`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content={data?.[13]?.content ? data[13].content : "Centra Windows | Supreme"}
+          content={"Centra Windows | Supreme"}
         />
         {/* prevents google bots from indexing this page */}
         {/* <meta name="robots" content="noindex"></meta> */}
@@ -115,24 +94,22 @@ export default function career({ data, insta }) {
 
       {/* 0 */}
       <div className={styles.headerBg}>
-
-
         <img
           src={data?.[0]?.images?.[0].imagePath}
           layout="fill"
           quality={100}
-          alt={data?.[0]?.images?.[0]?.seoAlt}
+          alt={"Header Supreme"}
           className={styles.headerImage}
         />
 
         <div className={styles.container}>
-          <h1 className={styles.headerTitle}>{data[0].title}</h1>
+          <h1 className={styles.headerTitle}>{"Welcome Supreme Team!"}</h1>
 
         </div>
       </div>
       <div className={styles.headerRightAlignedContainer}>
         <div className={styles.containerCenterMiddle}>
-          <p className={styles.headerText}>{data?.[0]?.content}</p>
+          <p className={styles.headerText}>{"We are so excited to welcome the Supreme team to our family. Centra has a very special culture, and we value all the unique gifts each of you bring to work every day. We are here to support you through this transition. As we learn about each other and align the businesses through this exciting new chapter, we want to ensure open and transparent communication."}</p>
         </div>
       </div>
 
@@ -140,11 +117,11 @@ export default function career({ data, insta }) {
       <div className={styles.awardContainer}>
         <div className={styles.awardTextContainer}>
           <p className={styles.awardTitle}>
-            {data[5].title !== "" ? data[5].title : "Dummy text"}
+            {"Why Centra Windows?"}
           </p>
 
           <p className={styles.awardText}>
-            {data[5].content !== "" ? data[5].content : "Dummy text"}
+            {"Leadership at Centra is collaborative and supportive. This is why we took the opportunity to hear from Supreme management, to learn more about the amazing brand that you have all built and how we can help take that next step together. "}
           </p>
         </div>
         <div className={styles.awardsVideoContainer}>
@@ -180,10 +157,10 @@ export default function career({ data, insta }) {
             className={styles.arrowDownBlack}
           />
           <p className={styles.title + " " + styles.centerText}>
-            {data[2].title !== "" ? data[2].title : "Dummy text"}
+            {"What is the Centra Culture?"}
           </p>
           <p className={styles.text + " " + styles.workTextContainer}>
-            {data[2].content !== "" ? data[2].content : "Dummy text"}
+            {"At Centra, passion and performance meet to create a culture full of people who OWN IT! This unique, evolving culture is built on the unshakeable foundation of our key values. Family, Entrepreneurial Spirit, Respect, Safety, and Teamwork are more than just buzzwords. Learn more from these videos. If you have any questions, just reach out and we’ll be happy to answer them! In a few weeks, you will have access to our internal Workplace group, where you can meet and learn more about our team. Stay tuned! "}
           </p>
         </div>
 
@@ -236,28 +213,62 @@ export default function career({ data, insta }) {
         </div>
       </div>
 
-      <CentraCares data={centraCaresData} size={size} />
 
 
+      <div className={styles.PercentContainer}>
+        <div className={styles.imagesContainer}>
+          {size.width > 992 ? (
+            <img
+              src={"/cares/group.webp"}
+              alt={"group"}
+              className={styles.smallImage}
+            />
+          ) : null}
+          {size.width > 992 ? (
+            <img
+              src={"/cares/group.webp"}
+              alt={"group"}
+              className={styles.bigImage}
+            />
+          ) : null}
 
 
-      <div className={styles.ownersContainer}>
-        <p className={styles.ownersText}>
-          {data[4].subtitle !== "" ? data[4].subtitle : "Dummy text"}
-        </p>
-        <div className={styles.ownerLineContainer}>
-          <p className={styles.ownersTitle}>
-            {parsedText[0] + " " + parsedText[1]}
-          </p>
+          {size.width > 992 ? (
+            <img
+              src={"/cares/group.webp"}
+              alt={"group"}
+              className={styles.smallImage}
+            />
+          ) : null}
+        </div>
+        <div className={styles.hundredContainer}>
+          <div className={styles.hundredContentContainer}>
+            <img
+              src="/images/dump/percent.webp"
+              alt="100 percent icon"
+              className={styles.hundred}
+            />
 
-          <p className={styles.ownersTitle}>{parsedTextRest}</p>
+            {size.width > 992 ? (
+              <div className={styles.employeeTextContainer}>
+                <p className={styles.employeeTitle}> {"Employee Owned"}</p>
+                <p className={styles.employeeText}>{"We understand that change can seem scary. This is especially true when it comes to your work which is an important part of how you support yourself and your families. We’re Employee Owned because we care about our people and their families, and we want them to have security and peace of mind through work now and forever."}</p>
+              </div>
+            ) : (
+              <p className={styles.employeeTitle}> {"Employee Owned"}</p>
+            )}
+          </div>
+
+          {size.width > 992 ? null : (
+            <p className={styles.employeeText}>{"We understand that change can seem scary. This is especially true when it comes to your work which is an important part of how you support yourself and your families. We’re Employee Owned because we care about our people and their families, and we want them to have security and peace of mind through work now and forever."}</p>
+          )}
         </div>
       </div>
 
       {/* 6 */}
       <div className={styles.missionContainer}>
         <p className={styles.missionTitle}>
-          {data[6].title !== "" ? data[6].title : "Dummy text"}
+          {"Why Centra? "}
         </p>
         <div className={styles.missionCardContainer}>
           <div className={styles.missionCard}>
@@ -267,11 +278,9 @@ export default function career({ data, insta }) {
               width="40"
               height="40"
             />
-            <p className={styles.missionSubtitle}>We Invest In Our People</p>
+            <p className={styles.missionSubtitle}>Locally Owned & Operated</p>
             <p className={styles.missionText}>
-              People are at the core of our goals. Simply put, our business
-              goals are always based on growing our team’s expertise and the
-              number of Employee Owners.
+              We understand and appreciate the role the community has played in our success, and we’re constantly striving to give back. When people choose Centra, they are supporting a locally owned and operated business.
             </p>
           </div>
           <div className={styles.missionCard}>
@@ -281,11 +290,9 @@ export default function career({ data, insta }) {
               width="40"
               height="40"
             />
-            <p className={styles.missionSubtitle}>Passion & Performance</p>
+            <p className={styles.missionSubtitle}>Employee Owned</p>
             <p className={styles.missionText}>
-              We are passionate, and that passion is what drives our
-              performance. You should belong to a culture where your passion is
-              rewarded.
+              Centra is 100% Employee Owned and operated. Everyone who works for Centra, and now for Supreme Windows, has a chance to join our share match program and benefit as we continue to grow.
             </p>
           </div>
 
@@ -297,24 +304,25 @@ export default function career({ data, insta }) {
               height="40"
             />
             <p className={styles.missionSubtitle}>
-              Build Equity Beyond Your Paycheck
+              Award-Winning Culture
             </p>
             <p className={styles.missionText}>
-              Ever thought about going into business for yourself? Reduce the
-              risk while still reaping the benefits with employee ownership!
+              We’re not in the window business, we’re in the people business. Centra is very proud to be recognized and awarded as one of Canada’s most admired corporate cultures.
             </p>
           </div>
         </div>
       </div>
-      <div className={styles.divider} />
+
+
+      <CentraCares data={centraCaresData} size={size} />
       {/* 7 */}
       <div className={styles.benefitsContainer}>
         <div className={styles.benefitsTitleContainer}>
           <p className={styles.benefitsTitle}>
-            {data[7].title !== "" ? data[7].title : "Dummy text"}
+            {"Our Commitments to You"}
           </p>
           <p className={styles.benefitsText}>
-            {data[7].subtitle !== "" ? data[7].subtitle : "Dummy text"}
+            {"We’re proud of the culture our people have created. We’re committed to it, and also to you. Learn more about how our team of Employee Owners will support you and your journey at Centra."}
           </p>
         </div>
 
@@ -322,45 +330,35 @@ export default function career({ data, insta }) {
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={data?.[7]?.images?.[0]?.imagePath}
-                alt={data?.[7]?.images?.[0]?.seoAlt}
+                src={"/cares/group.webp"}
+                alt={"Diversity Image"}
                 width={"100%"}
                 height={"100%"}
               />
             </div>
 
             <p className={styles.benefitsSubtitle}>
-              {" "}
-              {data[7].images[0].imgVideoTitle !== ""
-                ? data[7].images[0].imgVideoTitle
-                : "Dummy text"}
+              Diversity and Inclusion
             </p>
             <p className={styles.benefitsContentText}>
-              {data[7].images[0].imgVideoSubtitle !== ""
-                ? data[7].images[0].imgVideoSubtitle
-                : "Dummy text"}
+              We’re committed to building the most diverse and inclusive company in the industry. Our Employee Owners come from diverse cultures, backgrounds, genders, and sexualities, and they come with diverse thoughts, skillsets, and ideas.
             </p>
           </div>
 
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={data?.[7]?.images?.[1]?.imagePath}
-                alt={data?.[7]?.images?.[1]?.seoAlt}
+                src={"/cares/group.webp"}
+                alt={"Health & Well Being "}
                 width={"100%"}
                 height={"100%"}
               />
             </div>
             <p className={styles.benefitsSubtitle}>
-              {" "}
-              {data[7].images[1].imgVideoTitle !== ""
-                ? data[7].images[1].imgVideoTitle
-                : "Dummy text"}
+              Growth Opportunities
             </p>
             <p className={styles.benefitsContentText}>
-              {data[7].images[1].imgVideoSubtitle !== ""
-                ? data[7].images[1].imgVideoSubtitle
-                : "Dummy text"}
+              We’re committed to growing your career and nurturing you however we can. We want to see you advance and try new things. We’ll also support your education and offer the opportunity to learn exciting new skills.
             </p>
           </div>
         </div>
@@ -368,115 +366,168 @@ export default function career({ data, insta }) {
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={data?.[7]?.images?.[2]?.imagePath}
-                alt={data?.[7]?.images?.[2]?.seoAlt}
+                src={"/cares/group.webp"}
+                alt={"Health & Well Being "}
                 width={"100%"}
                 height={"100%"}
               />
             </div>
             <p className={styles.benefitsSubtitle}>
-              {data[7].images[2].imgVideoTitle !== ""
-                ? data[7].images[2].imgVideoTitle
-                : "Dummy text"}
+              Health and Wellbeing
             </p>
             <p className={styles.benefitsContentText}>
-              {data[7].images[2].imgVideoSubtitle !== ""
-                ? data[7].images[2].imgVideoSubtitle
-                : "Dummy text"}
+              We’re committed to your health and wellbeing. This includes your physical, psychological, and financial wellness. You’re not a robot, and you shouldn’t be treated like one.
             </p>
           </div>
 
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={data?.[7]?.images?.[3]?.imagePath}
-                alt={data?.[7]?.images?.[3]?.seoAlt}
+                src={"/cares/group.webp"}
+                alt={"Health & Well Being "}
                 width={"100%"}
                 height={"100%"}
               />
             </div>
             <p className={styles.benefitsSubtitle}>
-              {data[7].images[3].imgVideoTitle !== ""
-                ? data[7].images[3].imgVideoTitle
-                : "Dummy text"}
+              Investment & Training
             </p>
             <p className={styles.benefitsContentText}>
-              {data[7].images[3].imgVideoSubtitle !== ""
-                ? data[7].images[3].imgVideoSubtitle
-                : "Dummy text"}
+              We’re committed to offering you the opportunity to learn exciting new skills, both with in-house training programs, formal education, and support in trade designations.
             </p>
           </div>
         </div>
       </div>
-      <div className={styles.equalContainer}>
-        <div className={styles.equalContentContainer}>
-          <p className={styles.equalTitle}>Respect for All</p>
-          <p className={styles.equalText}>
-            “As a woman in construction, it’s important that I belong to a
-            company which gives me respect, support, and equal opportunities. At
-            Centra, I’ve been given the tools to break down the barriers many
-            women face in a typically male-dominated industry. I am proud to be
-            a part of a team that encourages us to grow without prejudice and
-            celebrates our talents as individuals.” - Natalie Honey
-          </p>
-          <a href="#" className={styles.learnMoreLink}>
-            <p className={styles.equalLink}>Learn More</p>
-            <img
-              loading="lazy"
-              alt="black arrow icon"
-              src="/images/Atoms-Arrow-Small-Black.webp"
-              width="40"
-              height="40"
-              className={styles.arrowBlack}
-            />
-          </a>
-        </div>
 
-        <div className={styles.equalContentContainer}>
-          <p className={styles.equalTitle}>Become a Leader</p>
-          <p className={styles.equalText}>
-            "There are leaders in every team who take charge and have real
-            impact; on the business, our people, and our customers every day.
-            You are given the opportunity at Centra to lead if you are willing
-            to take on the challenge. If you want experience and opportunity,
-            you can find it here. Leading new teams, spearheading projects,
-            owning a piece of the Centra evolution. Titles don’t always tell the
-            whole tale." - Lana Gordin
+
+      <div className={styles.containerStandard + " " + styles.mdMarginTop}>
+        <div className={styles.locationsContainer}>
+          <p className={styles.familyTitle}>{"Our Locations"}</p>
+          <p className={styles.familyText + " " + styles.locationsText}>
+            {"Find the location closest to you and pay our showroom a visit. Our Window Geeks can’t wait to meet you!"}
           </p>
-          <a href="#" className={styles.learnMoreLink}>
-            <p className={styles.equalLink}>Learn More</p>
-            <img
-              loading="lazy"
-              alt="black arrow icon"
-              src="/images/Atoms-Arrow-Small-Black.webp"
-              width="40"
-              height="40"
-              className={styles.arrowBlack}
-            />
-          </a>
+
+          <div className={styles.locationsContentContainer}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/dir//google+maps+centra+langley/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x5485d3e74511f5f5:0x9b455e03b3fce0f0?sa=X&ved=2ahUKEwjHkovDi7LwAhXRqp4KHYtPBZkQ9RcwE3oECC8QBQ"
+              className={styles.relativePosition}
+            >
+              <img
+                src="/images/dump/langley.webp"
+                alt="langley"
+                className={styles.locationImage}
+              />
+              <p className={styles.locationText}>Langley</p>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/dir//centra+victoria+google+maps/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x548f736382c6eb41:0xe35c384332f1613?sa=X&ved=2ahUKEwitvNSjlbLwAhUNpp4KHV-EBZgQ9RcwHHoECCQQBA"
+              className={styles.relativePosition}
+            >
+              <img
+                src="/images/dump/victoria.webp"
+                alt="victoria"
+                className={styles.locationImage}
+              />
+              <p className={styles.locationText}>Victoria</p>
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/dir//centra+nanaimo+google+maps/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x5488a2257f1d2815:0x3145d3c5f696e45a?sa=X&ved=2ahUKEwiN6KyylbLwAhVPuZ4KHRkpBJoQ9RcwE3oECBoQBA"
+              className={styles.relativePosition}
+            >
+              <img
+                src="/images/dump/nanaimo.webp"
+                alt="nanaimo"
+                className={styles.locationImage}
+              />
+              <p className={styles.locationText}>Nanaimo</p>
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/dir//centra+kelowna+google+maps/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x537d8d2d2f29e721:0x70eb410a5ca73d64?sa=X&ved=2ahUKEwiqlN6_lbLwAhVHgp4KHf2rA5sQ9RcwHHoECDEQBQ"
+              className={styles.relativePosition}
+            >
+              <img
+                src="/images/dump/kelowna.webp"
+                alt="kelowna"
+                className={styles.locationImage}
+              />
+              <p className={styles.locationText}>Kelowna</p>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/place/Supreme+Windows+(Calgary)+Inc.+Established+1967/@50.9621047,-113.9702901,17z/data=!3m1!4b1!4m5!3m4!1s0x537179e3865a2417:0xf5a36d40583da144!8m2!3d50.9621047!4d-113.9681015"
+              className={styles.relativePosition}
+            >
+              <img
+                src="/images/dump/Calgary.jpg"
+                alt="Calgary Supreme Windows"
+                className={styles.locationImage}
+              />
+              <p className={styles.locationText}>Calgary</p>
+            </a>
+          </div>
         </div>
       </div>
       {/*11 */}
       {insta && size.width > 960 ? (
         <>
-          {" "}
           <div className={styles.lifeContainer}>
             <p className={styles.lifeTitle}>
-              {" "}
-              {data[11].title !== "" ? data[11].title : "Dummy text"}
+              Follow us on Social!
+            </p>
+            <p className={styles.lifeSubtitle}>
+              Follow us on  <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com/centrawindows/"
+                className={styles.lifeLink}
+              >
+
+                Instagram
+              </a>,{" "}
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/centrawindows/"
+                className={styles.lifeLink}
+              >
+
+                Facebook
+              </a>,{" "}
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/CentraWindows?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                className={styles.lifeLink}
+              >
+
+                Twitter
+              </a>,{" "}
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ca.linkedin.com/company/centra"
+                className={styles.lifeLink}
+              >
+
+                LinkedIn
+              </a>
+
             </p>
 
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://instagram.com/centrawindows/"
-              className={styles.lifeLink}
-            >
-              <p className={styles.lifeSubtitle}>
-                {`Follow us on Instagram:  `}{" "}
-              </p>{" "}
-              @centrawindows
-            </a>
           </div>
           <div className={styles.blogContentContainer}>
             <Carousel
@@ -507,11 +558,10 @@ export default function career({ data, insta }) {
       {/* 12 */}
       <CallToAction
         data={data[12]}
-        currentOpenings
-        yellow
+        supreme
         text={"SEE OUR CURRENT OPENINGS"}
       />
-      <Footer size={size} />
+
     </>
   );
 }

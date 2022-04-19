@@ -56,7 +56,229 @@
     height: 30px;
   }
 }
+// 100% section
+.PercentContainer {
+  display: flex;
+  flex-direction: column-reverse;
 
+  @media only screen and (max-width: 992px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bigImage {
+  width: 30%;
+  height: 544px;
+  margin-left: 32px;
+  margin-right: 32px;
+  object-fit: contain;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: top;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.smallImage {
+  width: 30%;
+  height: 353px;
+  object-fit: contain;
+}
+
+.containerStandard {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hundred {
+  width: 390px;
+  height: 270px;
+  object-fit: contain;
+  @media only screen and (max-width: 992px) {
+    margin-right: unset;
+    width: 90%;
+    object-fit: contain;
+    margin-top: none;
+  }
+  @media only screen and (max-width: 840px) {
+    width: 45%;
+    margin-right: 20px;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 40%;
+  }
+}
+
+.hundredContainer {
+  margin-top: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-direction: column;
+  @media only screen and (max-width: 1240px) {
+    margin-top: unset;
+  }
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+.locationsContentContainer {
+  display: flex;
+  margin-top: 61px;
+  margin-bottom: 42.5px;
+  @media only screen and (max-width: 992px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.locationText {
+  font-size: 24px;
+  font-family: TTCommons-Bold;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 11px;
+  margin-right: 32px;
+  text-align: center;
+  @media only screen and (max-width: 1300px) {
+    bottom: -25px;
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 1170px) {
+    bottom: 25px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    bottom: -25px;
+  }
+}
+.locationImage {
+  margin-right: 32px;
+
+  @media only screen and (max-width: 1300px) {
+    margin-right: 2px;
+  }
+  @media only screen and (max-width: 1170px) {
+    width: 200px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    width: unset;
+  }
+
+  @media only screen and (max-width: 670px) {
+    width: 175px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 125px;
+  }
+}
+.familyTitle {
+  font-size: 52px;
+  font-family: TTCommons-Bold;
+}
+.familyText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+}
+.locationsText {
+  width: 520px;
+  @media only screen and (max-width: 602px) {
+    width: 90%;
+  }
+}
+.relativePosition {
+  position: relative;
+  color: unset;
+
+  @media only screen and (max-width: 1300px) {
+    height: 250px;
+    margin: 2px;
+  }
+  @media only screen and (max-width: 992px) {
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 670px) {
+    height: 175px;
+  }
+  @media only screen and (max-width: 450px) {
+    height: 132px;
+  }
+}
+
+.locationsContentContainer {
+  display: flex;
+  margin-top: 61px;
+  margin-bottom: 42.5px;
+  @media only screen and (max-width: 992px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.employeeTextContainer {
+  width: 50%;
+
+  margin-left: 50px;
+}
+.employeeTitle {
+  font-size: 52px;
+  font-family: TTCommons-Bold;
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 485px) {
+    font-size: 34px;
+    margin-bottom: 0;
+    line-height: normal;
+  }
+}
+
+.employeeText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+  width: 100%;
+  text-align: left;
+  @media only screen and (max-width: 992px) {
+    width: 80%;
+  }
+}
+.hundredContentContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  align-items: center;
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .arrowBack {
   transform: rotate(180deg);
 }
@@ -77,11 +299,11 @@
   filter: brightness(0.7);
 }
 .headerBg {
-  height: 1000px;
+  height: 850px;
   margin-top: -86px;
   position: relative;
   @media only screen and (max-width: 960px) {
-    height: 100%;
+    height: 500px;
     margin-top: unset;
   }
 }
@@ -138,7 +360,6 @@
   justify-content: unset;
   align-items: unset;
   margin-top: 175px;
-  margin-top: 75px;
   margin-bottom: 75px;
 }
 
@@ -220,7 +441,7 @@
   left: -100px;
 }
 .headerTitle {
-  margin-top: 300px;
+  margin-top: 220px;
   font-family: "TTNORMS-BOLD";
   font-size: 84px;
   color: white;
@@ -236,7 +457,7 @@
     font-size: 60px;
   }
   @media only screen and (max-width: 960px) {
-    margin-top: 200px;
+    margin-top: 0px;
   }
   @media only screen and (max-width: 450px) {
     font-size: 42px;
@@ -267,10 +488,10 @@
     margin-top: unset;
     min-height: 400px;
     margin-bottom: unset;
+    position: unset;
     width: 100%;
     height: auto;
     margin-bottom: 47px;
-    
   }
 }
 
@@ -464,6 +685,10 @@
   @media only screen and (max-width: 1200px) {
     flex-direction: column;
   }
+
+  @media only screen and (max-width: 960px) {
+    padding-top: 40px;
+  }
 }
 
 .awardTextContainer {
@@ -494,7 +719,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -593,8 +818,8 @@
 }
 
 .blogContentContainer {
-  margin-top: 71px;
-  margin-bottom: 71px;
+  margin-top: 30px;
+  margin-bottom: 120px;
 }
 
 .benefitsContentContainer {
@@ -768,7 +993,6 @@
 }
 
 .lifeLink {
-  display: flex;
   align-items: baseline;
   font-family: TTCommons-Bold;
   font-size: 18px;
@@ -793,4 +1017,10 @@
 .instagramImg {
   object-fit: cover;
   object-position: top;
+}
+
+//locations
+
+.mdMarginTop {
+  margin-top: 80px;
 }
