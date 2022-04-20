@@ -142,15 +142,7 @@
     align-items: center;
   }
 }
-.locationsContentContainer {
-  display: flex;
-  margin-top: 61px;
-  margin-bottom: 42.5px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  @media only screen and (max-width: 992px) {
-  }
-}
+
 .locationText {
   font-size: 24px;
   font-family: TTCommons-Bold;
@@ -240,10 +232,13 @@
     width: 128px;
   }
 }
+
 .locationsContentContainer {
   display: flex;
   margin-top: 61px;
   margin-bottom: 42.5px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   @media only screen and (max-width: 1800px) {
     max-width: 1100px;
   }
@@ -251,6 +246,9 @@
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 80px;
+  }
+  @media only screen and (max-width: 450px) {
+    justify-content: unset;
   }
 }
 .employeeTextContainer {

@@ -30,12 +30,36 @@ const centraCaresData = {
     "Our community is very important to us and we want to make sure that we support our new Alberta family. We will be organizing a Centra Cares charity donation based on causes you all care about. Nominate a Calgary charity of your choice by May 31st and we will provide $10,000 to the local charity! Please contact us to share with us a cause you’re passionate about that you would like us to support.",
   title: "Centra Cares",
   images: [
-    { seoAlt: "Cares Image", imagePath: "/images/Section 5/Centra-Cares-members-celebrating-at-local-golf-tournament.webp" },
-    { seoAlt: "Cares Image", imagePath: "/images/Section 5/Centra-Cares-supporting-local-communities-in-Haiti.webp" },
-    { seoAlt: "Cares Image", imagePath: "/images/Section 5/Centra-Windows-Employees-at-Langley-manufacturing-plant.webp" },
-    { seoAlt: "Cares Image", imagePath: "/images/Section 5/Centra-Windows-Family-at-Langley-manufacturing-plant.webp" },
-    { seoAlt: "Cares Image", imagePath: "/images/Section 5/Centra-Windows-supporting-local-school-and-vancouver-giants.webp" },
-    { seoAlt: "Cares Image", imagePath: "/images/Section 5/Centra-Windows-supporting-Wagner-Hills-charity.webp" },
+    {
+      seoAlt: "Cares Image",
+      imagePath:
+        "/images/Section 5/Centra-Cares-members-celebrating-at-local-golf-tournament.webp",
+    },
+    {
+      seoAlt: "Cares Image",
+      imagePath:
+        "/images/Section 5/Centra-Cares-supporting-local-communities-in-Haiti.webp",
+    },
+    {
+      seoAlt: "Cares Image",
+      imagePath:
+        "/images/Section 5/Centra-Windows-Employees-at-Langley-manufacturing-plant.webp",
+    },
+    {
+      seoAlt: "Cares Image",
+      imagePath:
+        "/images/Section 5/Centra-Windows-Family-at-Langley-manufacturing-plant.webp",
+    },
+    {
+      seoAlt: "Cares Image",
+      imagePath:
+        "/images/Section 5/Centra-Windows-supporting-local-school-and-vancouver-giants.webp",
+    },
+    {
+      seoAlt: "Cares Image",
+      imagePath:
+        "/images/Section 5/Centra-Windows-supporting-Wagner-Hills-charity.webp",
+    },
   ],
 };
 export default function career({ data, insta }) {
@@ -163,9 +187,17 @@ export default function career({ data, insta }) {
             {"What is the Centra Culture?"}
           </p>
           <p className={styles.text + " " + styles.workTextContainer}>
-            {
-              "At Centra, passion and performance meet to create a culture full of people who OWN IT! This unique, evolving culture is built on the unshakeable foundation of our key values. Family, Entrepreneurial Spirit, Respect, Safety, and Teamwork are more than just buzzwords. Learn more from these videos. If you have any questions, just reach out and we’ll be happy to answer them! In a few weeks, you will have access to our internal Workplace group, where you can meet and learn more about our team. Stay tuned! "
-            }
+            At Centra, passion and performance meet to create a culture full of
+            people who OWN IT! This unique, evolving culture is built on the
+            unshakeable foundation of our key values. Family, Entrepreneurial
+            Spirit, Respect, Safety, and Teamwork are more than just buzzwords.
+            Learn more from these videos. If you have any questions, just reach
+            out and we’ll be happy to answer them! In a few weeks, you will have
+            access to our internal Workplace group, where you can meet and learn
+            more about our team. Stay tuned! <br /> <br /> Feel free to contact
+            us with any questions and concerns. We'd love to hear from you!{" "}
+            <br />
+            <a href="mailto:letstalk@centra.ca">Contact Us</a>
           </p>
         </div>
 
@@ -313,7 +345,9 @@ export default function career({ data, insta }) {
       {/* s7 */}
       <div className={styles.benefitsContainer}>
         <div className={styles.benefitsTitleContainer}>
-          <p className={styles.benefitsTitle}>{"Our Commitments to You"}</p>
+          <p className={styles.benefitsTitle}>
+            Our Commitments {size.width < 600 ? <br /> : null}to You
+          </p>
           <p className={styles.benefitsText}>
             {
               "We’re proud of the culture our people have created. We’re committed to it, and also to you. Learn more about how our team of Employee Owners will support you and your journey at Centra."
@@ -325,7 +359,9 @@ export default function career({ data, insta }) {
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={"/images/Section 6/Centra-Windows-Experts-working-together-and-celebrating-teamwork.webp"}
+                src={
+                  "/images/Section 6/Centra-Windows-Experts-working-together-and-celebrating-teamwork.webp"
+                }
                 alt={"Diversity Image"}
                 width={"100%"}
                 height={"100%"}
@@ -344,7 +380,9 @@ export default function career({ data, insta }) {
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={"/images/Section 6/Centra-Windows-investing-in-training-and-education-for-young-installers-and-builders.webp"}
+                src={
+                  "/images/Section 6/Centra-Windows-investing-in-training-and-education-for-young-installers-and-builders.webp"
+                }
                 alt={"Health & Well Being "}
                 width={"100%"}
                 height={"100%"}
@@ -363,7 +401,9 @@ export default function career({ data, insta }) {
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={"/images/Section 6/Centra-Windows-Safety-officer-training-installers-in-BC.webp"}
+                src={
+                  "/images/Section 6/Centra-Windows-Safety-officer-training-installers-in-BC.webp"
+                }
                 alt={"Health & Well Being "}
                 width={"100%"}
                 height={"100%"}
@@ -380,7 +420,9 @@ export default function career({ data, insta }) {
           <div className={styles.benefitsContentContainer}>
             <div className={styles.benefitsImg}>
               <LazyImage
-                src={"/images/Section 6/Centra-Windows-team-training-and-learning-about-vinyl-windows-in-BC.webp"}
+                src={
+                  "/images/Section 6/Centra-Windows-team-training-and-learning-about-vinyl-windows-in-BC.webp"
+                }
                 alt={"Health & Well Being "}
                 width={"100%"}
                 height={"100%"}
