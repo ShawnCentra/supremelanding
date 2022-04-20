@@ -5,6 +5,11 @@
   padding-top: 60px;
   padding-right: 10%;
   background: #fafafa;
+  @media only screen and (max-width: 1100px) {
+    padding-left: 2%;
+
+    padding-right: 2%;
+  }
 }
 .caresFlexWrapper {
   display: flex;
@@ -24,7 +29,7 @@
   width: 40px;
   margin-top: -10px;
   position: absolute;
-left:1%;
+  left: 1%;
   &:hover {
     background: #005db9;
     .blogBackButton {
@@ -74,17 +79,19 @@ left:1%;
   padding-top: 9px;
 }
 
-.carouselImageContainer{
-  width:100%;
-  height:300px;
+.carouselImageContainer {
+  width: 100%;
+  height: 600px;
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 992px) {
+    height: 450px;
+  }
 }
 
 .caresLinkContainer {
-
   display: flex;
-  margin-bottom:30px;
+  margin-bottom: 30px;
   &:hover {
     .caresLink {
       text-decoration: underline;

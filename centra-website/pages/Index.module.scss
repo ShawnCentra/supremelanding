@@ -100,6 +100,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 992px) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 .hundred {
@@ -122,18 +126,17 @@
 }
 
 .hundredContainer {
-  margin-top: 184px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
   flex-direction: column;
-  @media only screen and (max-width: 1240px) {
+  @media only screen and (max-width: 1100px) {
     margin-top: unset;
   }
   @media only screen and (max-width: 992px) {
     flex-direction: column;
-    margin-top: 50px;
     width: 100%;
     text-align: center;
     align-items: center;
@@ -143,9 +146,9 @@
   display: flex;
   margin-top: 61px;
   margin-bottom: 42.5px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   @media only screen and (max-width: 992px) {
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 .locationText {
@@ -172,28 +175,7 @@
     bottom: -25px;
   }
 }
-.locationImage {
-  margin-right: 32px;
 
-  @media only screen and (max-width: 1300px) {
-    margin-right: 2px;
-  }
-  @media only screen and (max-width: 1170px) {
-    width: 200px;
-  }
-
-  @media only screen and (max-width: 992px) {
-    width: unset;
-  }
-
-  @media only screen and (max-width: 670px) {
-    width: 175px;
-  }
-
-  @media only screen and (max-width: 450px) {
-    width: 125px;
-  }
-}
 .familyTitle {
   font-size: 52px;
   font-family: TTCommons-Bold;
@@ -212,28 +194,63 @@
   position: relative;
   color: unset;
 
+  @media only screen and (max-width: 1800px) {
+    margin: 20px;
+  }
   @media only screen and (max-width: 1300px) {
     height: 250px;
-    margin: 2px;
+    margin: 26px;
   }
-  @media only screen and (max-width: 992px) {
-    margin-bottom: 50px;
+  @media only screen and (max-width: 960px) {
+    margin: 30px;
   }
-  @media only screen and (max-width: 670px) {
-    height: 175px;
+  @media only screen and (max-width: 800px) {
+    margin: unset;
+    margin-top: 49px;
   }
+  @media only screen and (max-width: 730px) {
+    height: 180px;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 180px;
+  }
+
   @media only screen and (max-width: 450px) {
-    height: 132px;
+    height: 130px;
   }
 }
 
+.locationImage {
+  margin-right: 32px;
+  @media only screen and (max-width: 1800px) {
+    margin-right: unset;
+  }
+  @media only screen and (max-width: 1170px) {
+    width: 200px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    width: unset;
+  }
+  @media only screen and (max-width: 730px) {
+    width: 180px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 128px;
+  }
+}
 .locationsContentContainer {
   display: flex;
   margin-top: 61px;
   margin-bottom: 42.5px;
+  @media only screen and (max-width: 1800px) {
+    max-width: 1100px;
+  }
   @media only screen and (max-width: 992px) {
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 80px;
   }
 }
 .employeeTextContainer {
@@ -361,6 +378,9 @@
   align-items: unset;
   margin-top: 175px;
   margin-bottom: 75px;
+  @media only screen and (max-width: 1100px) {
+    margin-bottom: unset;
+  }
 }
 
 .workTextContentContainer {
@@ -369,6 +389,12 @@
   align-items: center;
   position: relative;
   justify-content: center;
+  @media only screen and (max-width: 1100px) {
+    justify-content: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: unset;
+  }
 }
 
 .workHeaderContainer {
@@ -380,14 +406,10 @@
 }
 
 .workTextContainer {
-  text-align: center;
   margin-bottom: 34px;
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   margin-bottom: 80px;
-  @media only screen and (max-width: 960px) {
-    width: 85%;
-  }
 }
 
 .meetCentraFamilyLink {
@@ -491,7 +513,6 @@
     position: unset;
     width: 100%;
     height: auto;
-    margin-bottom: 47px;
   }
 }
 
@@ -544,6 +565,10 @@
 .title {
   font-size: 52px;
   font-family: TTCommons-Bold;
+  @media only screen and (max-width: 700px) {
+    text-align: left !important;
+    width: 100% !important;
+  }
   @media only screen and (max-width: 650px) {
     font-size: 44px;
   }
@@ -563,7 +588,6 @@
   @media only screen and (max-width: 650px) {
     margin-top: 28px;
     width: 80%;
-    margin-left: 10%;
   }
 }
 
@@ -574,7 +598,6 @@
 
   @media only screen and (max-width: 650px) {
     width: 95%;
-    margin-left: 2%;
   }
 }
 
@@ -585,6 +608,7 @@
   @media only screen and (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
+    margin-bottom: unset;
   }
 }
 .awardsVideoContainer {
@@ -683,11 +707,16 @@
   padding-left: 10%;
   padding-right: 10%;
   @media only screen and (max-width: 1200px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: unset;
   }
 
   @media only screen and (max-width: 960px) {
-    padding-top: 40px;
+    padding-top: 100px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 
@@ -696,7 +725,7 @@
   width: 448px;
   @media only screen and (max-width: 1200px) {
     margin-right: unset;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   @media only screen and (max-width: 660px) {
@@ -755,10 +784,15 @@
 .missionCard {
   margin: 14.5px;
   width: 353px;
-  height: 350px;
+  height: 393px;
   padding: 48px 64px 0px 64px;
   margin-bottom: 20px;
   background-color: #f2ff56;
+
+  @media only screen and (max-width: 600px) {
+    margin: 2%;
+    width: unset;
+  }
 }
 
 .benefitsContainer {
@@ -768,6 +802,11 @@
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  @media only screen and (max-width: 1130px) {
+    margin-top: 120px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 .benefitsFlexContainer {
@@ -783,11 +822,18 @@
 .benefitsTitleContainer {
   text-align: center;
   width: 80%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .benefitsTitle {
   font-size: 52px;
   font-family: TTCommons-Bold;
+  @media only screen and (max-width: 600px) {
+    font-size: 44px;
+  }
 }
 
 .benefitsText {
@@ -797,12 +843,16 @@
   margin: 0 auto;
   max-width: 600px;
   margin-bottom: 30px;
+  @media only screen and (max-width: 600px) {
+    text-align: unset;
+    margin: unset;
+  }
 }
 
 .benefitsContentText {
   font-size: 18px;
   font-family: TTCommons-Regular;
-  max-width: 750px;
+  max-width: 650px;
   width: 500px;
 
   @media only screen and (max-width: 1130px) {
@@ -826,10 +876,8 @@
   margin: 12px;
 
   @media only screen and (max-width: 575px) {
-    margin-top: 60px;
-  }
-  &:nth-of-type(1) {
-    margin-top: 10px;
+    margin: unset;
+    margin-top: 40px;
   }
 }
 .benefitsSubtitle {

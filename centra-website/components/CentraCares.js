@@ -18,9 +18,6 @@ const responsive = {
   },
 };
 
-
-
-
 export default function components(props) {
   const CustomRightArrow = ({ onClick }) => {
     // onMove means if dragging or swiping in progress.
@@ -80,7 +77,10 @@ export default function components(props) {
           <div className={styles.caresFlexWrapper}>
             <p className={styles.caresText}>{props?.data?.content}</p>
             <div className={styles.caresLinkContainer}>
-              <a href="https://www.centracares.ca/" className={styles.caresLink}>
+              <a
+                href="https://www.centracares.ca/"
+                className={styles.caresLink}
+              >
                 CENTRACARES.CA
               </a>
               <div className={styles.caresArrowImgContainerLink}>
@@ -106,7 +106,6 @@ export default function components(props) {
           infinite={false}
           containerClass={styles.carouselContainer + " carousel-container"}
           itemClass={styles.item}
-          
           customRightArrow={<CustomRightArrow />}
           customLeftArrow={<CustomLeftArrow />}
         >
@@ -114,18 +113,11 @@ export default function components(props) {
             return (
               <div className={styles.carouselImageContainer}>
                 <LazyImage
-                  src={
-                    props.size.width > 992
-                      ? image.imagePath
-                      : image.imagePath.slice(0, -4) + "_500x300.jpg"
-                  }
+                  src={image.imagePath}
                   alt={image.alt ? image.alt : ""}
                   width={"100%"}
-              
                 />
               </div>
-
-
             );
           })}
         </Carousel>
