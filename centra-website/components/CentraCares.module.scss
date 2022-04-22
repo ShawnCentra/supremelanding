@@ -17,7 +17,8 @@
 }
 .caresTextContainer {
   margin-left: 93.5px;
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1100px) {
+    align-self: flex-start;
     margin-left: unset;
   }
 }
@@ -92,6 +93,7 @@
 .caresLinkContainer {
   display: flex;
   margin-bottom: 30px;
+
   &:hover {
     .caresLink {
       text-decoration: underline;
@@ -108,6 +110,10 @@
       background: #005db9;
     }
   }
+  @media only screen and (max-width: 1100px) {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
 }
 
 .blogBackButton {
@@ -118,17 +124,32 @@
   padding: 7.3px;
   padding-top: 9px;
 }
+.caresImage {
+  @media only screen and (max-width: 1100px) {
+    align-self: center;
+    margin-bottom: 45px;
+  }
+}
 
 .caresTitleContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 1100px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .caresTitle {
   font-family: TTCommons-Bold;
   font-size: 32px;
 }
 
+.caresSubtitle {
+  font-family: TTCommons-DemiBold;
+  font-size: 22px;
+  color: #005bb9;
+}
 .caresText {
   font-family: TTCommons-Medium;
   font-size: 18px;
@@ -136,8 +157,19 @@
   margin-right: 67px;
   @media only screen and (max-width: 1100px) {
     width: auto;
+    margin-right: unset;
   }
 }
+.contactLink {
+
+  font-family: TTCommons-DemiBold;
+  font-size: 22px;
+  color: #005bb9;
+  @media only screen and (max-width: 1100px) {
+    margin-bottom: 30px;
+  }
+}
+
 .caresLink {
   font-family: TTCommons-Bold;
   font-size: 18px;

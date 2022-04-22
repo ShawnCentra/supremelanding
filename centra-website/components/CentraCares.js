@@ -60,39 +60,42 @@ export default function components(props) {
   return (
     <div className={styles.caresContainer}>
       <div className={styles.caresTitleContainer}>
-        {props.size.width < 1000 ? (
-          ""
-        ) : (
-          <img
-            loading="lazy"
-            alt="centra cares logo"
-            src="/images/Centra-Cares-logo.webp"
-            width="194.5"
-            height="183"
-          />
-        )}
+
+        <img
+        className={styles.caresImage}
+          loading="lazy"
+          alt="centra cares logo"
+          src="/images/Centra-Cares-logo.webp"
+          width="194.5"
+          height="183"
+        />
 
         <div className={styles.caresTextContainer}>
           <h2 className={styles.caresTitle}>{props?.data?.title}</h2>
-          <div className={styles.caresFlexWrapper}>
-            <p className={styles.caresText}>{props?.data?.content}</p>
-            <div className={styles.caresLinkContainer}>
-              <a
-                href="https://www.centracares.ca/"
-                className={styles.caresLink}
-              >
-                CENTRACARES.CA
-              </a>
-              <div className={styles.caresArrowImgContainerLink}>
-                <img
-                  loading="lazy"
-                  alt="yellow arrow icon"
-                  src="/images/ArrowNoBg.webp"
-                  width="40"
-                  height="40"
-                  className={styles.caresArrowImg}
-                />
-              </div>
+          <h3 className={styles.caresSubtitle}>{props?.data?.subtitle}</h3>
+          <p className={styles.caresText}>{props?.data?.content}</p>
+          <a href="mailto:letstalk@centra.ca" className={styles.contactLink}>{"Contact Us"}</a>
+
+        </div>
+        <div className={styles.caresFlexWrapper}>
+
+
+          <div className={styles.caresLinkContainer}>
+            <a
+              href="https://www.centracares.ca/"
+              className={styles.caresLink}
+            >
+              CENTRACARES.CA
+            </a>
+            <div className={styles.caresArrowImgContainerLink}>
+              <img
+                loading="lazy"
+                alt="yellow arrow icon"
+                src="/images/ArrowNoBg.webp"
+                width="40"
+                height="40"
+                className={styles.caresArrowImg}
+              />
             </div>
           </div>
         </div>

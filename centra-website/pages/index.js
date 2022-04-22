@@ -28,7 +28,8 @@ const responsive = {
 const centraCaresData = {
   content:
     "Our community is very important to us and we want to make sure that we support our new Alberta family. We will be organizing a Centra Cares charity donation based on causes you all care about. Nominate a Calgary charity of your choice by May 31st and we will provide $10,000 to the local charity! Please contact us to share with us a cause you’re passionate about that you would like us to support.",
-  title: "Centra Cares",
+  title: "Supreme Cares",
+  subtitle: "Nominate a Calgary charity and Centra will donate $10,000!",
   images: [
     {
       seoAlt: "Cares Image",
@@ -209,8 +210,9 @@ export default function career({ data, insta }) {
               height="100%"
               style="workVideo"
             />
-            <p className={styles.category}>Centra Family</p>
+
             <p className={styles.workTitle}>Centra Video</p>
+            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
           </div>
           <div style={{ height: `50px` }} />
           <div className={styles.workVideosContent}>
@@ -220,8 +222,9 @@ export default function career({ data, insta }) {
               height="100%"
               style="workVideo"
             />
-            <p className={styles.category}>FERST</p>
+
             <p className={styles.workTitle}>Centra Video</p>
+            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
           </div>
         </div>
       </div>
@@ -340,7 +343,37 @@ export default function career({ data, insta }) {
           </div>
         </div>
       </div>
+
+      <div className={styles.workTextContentContainer }>
+        <div className={styles.workVideosContainer + " " + styles.videoContainer}>
+          <div className={styles.workVideosContent}>
+            <Youtube
+              embedId={"https://www.youtube.com/embed/Xc4SkjvvHzs"}
+              width="100%"
+              height="100%"
+              style="workVideo"
+            />
+
+            <p className={styles.workTitle}>Centra Video</p>
+            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
+          </div>
+          <div style={{ height: `50px` }} />
+          <div className={styles.workVideosContent}>
+            <Youtube
+              embedId={"https://www.youtube.com/embed/Xc4SkjvvHzs"}
+              width="100%"
+              height="100%"
+              style="workVideo"
+            />
+
+            <p className={styles.workTitle}>Centra Video</p>
+            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
+          </div>
+        </div>
+      </div>
+
       {/* s6 */}
+
       <CentraCares data={centraCaresData} size={size} />
       {/* s7 */}
       <div className={styles.benefitsContainer}>
@@ -519,12 +552,12 @@ export default function career({ data, insta }) {
         </div>
       </div>
       {/*11 */}
-      {insta && size.width > 960 ? (
+      {insta  ? (
         <>
           <div className={styles.lifeContainer}>
             <p className={styles.lifeTitle}>Follow us on Social!</p>
             <p className={styles.lifeSubtitle}>
-              Follow us on{" "}
+               {size.width > 960?  "Follow us on " : null }
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -552,6 +585,7 @@ export default function career({ data, insta }) {
                 Twitter
               </a>
               ,{" "}
+              {size.width > 400?  null : <br/> }
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -559,6 +593,14 @@ export default function career({ data, insta }) {
                 className={styles.lifeLink}
               >
                 LinkedIn
+              </a>,{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/channel/UCcPXN5wQgJC7T8gQSYAuUew"
+                className={styles.lifeLink}
+              >
+                Youtube
               </a>
             </p>
           </div>

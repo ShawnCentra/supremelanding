@@ -62,6 +62,7 @@
   flex-direction: column-reverse;
 
   @media only screen and (max-width: 992px) {
+    margin-top: 40px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -100,6 +101,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 1100px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   @media only screen and (max-width: 992px) {
     padding-left: 2%;
     padding-right: 2%;
@@ -247,9 +252,6 @@
     margin-top: 30px;
     margin-bottom: 80px;
   }
-  @media only screen and (max-width: 450px) {
-    justify-content: unset;
-  }
 }
 .employeeTextContainer {
   width: 50%;
@@ -309,13 +311,12 @@
   height: inherit;
   z-index: -1;
   object-fit: cover;
-
+  object-position: top;
   position: absolute;
   filter: brightness(0.7);
 }
 .headerBg {
   height: 850px;
-  margin-top: -86px;
   position: relative;
   @media only screen and (max-width: 960px) {
     height: 500px;
@@ -445,7 +446,6 @@
 
 .arrowBlack {
   transition: 0.3s all;
-  margin-left: 20px;
 }
 .headerCTAContainer {
   display: flex;
@@ -593,35 +593,54 @@
   font-size: 32px;
   font-family: TTCommons-Bold;
   width: 90%;
-
+  margin-top: 30px;
+  margin-bottom: 0px;
   @media only screen and (max-width: 650px) {
     width: 95%;
   }
 }
 
+.workText {
+  font-size: 18px;
+  font-family: TTCommons-Regular;
+  width: 90%;
+
+  @media only screen and (max-width: 650px) {
+    width: 95%;
+  }
+}
+.videoContainer {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 180px !important;
+  @media only screen and (max-width: 1100px) {
+    padding: unset !important;
+    margin-bottom: 80px !important;
+  }
+}
 .workVideosContainer {
   display: flex;
   margin-bottom: 104.5px;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+
   @media only screen and (max-width: 1100px) {
     flex-direction: column;
     align-items: center;
     margin-bottom: unset;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 .awardsVideoContainer {
   width: 100%;
 }
 .workVideosContent {
-  width: 50%;
-  margin: 16px;
+  width: 48%;
+
   @media only screen and (max-width: 1100px) {
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 68%;
-  }
-  @media only screen and (max-width: 600px) {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -707,6 +726,8 @@
   @media only screen and (max-width: 1200px) {
     flex-direction: column-reverse;
     align-items: unset;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   @media only screen and (max-width: 960px) {
@@ -782,14 +803,16 @@
 .missionCard {
   margin: 14.5px;
   width: 353px;
-  height: 393px;
-  padding: 48px 64px 0px 64px;
+  height: 425px;
+  padding: 48px 64px 48px 64px;
   margin-bottom: 20px;
   background-color: #f2ff56;
 
   @media only screen and (max-width: 600px) {
     margin: 2%;
     width: unset;
+    height: 370px;
+    padding: 48px 25px 48px 25px;
   }
 }
 
@@ -818,12 +841,7 @@
   }
 }
 .benefitsTitleContainer {
-  text-align: center;
-  width: 80%;
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    text-align: left;
-  }
+  width: fit-content;
 }
 
 .benefitsTitle {
@@ -837,7 +855,7 @@
 .benefitsText {
   font-size: 18px;
   font-family: TTCommons-Regular;
-  text-align: center;
+
   margin: 0 auto;
   max-width: 600px;
   margin-bottom: 30px;
@@ -1023,17 +1041,14 @@
 .lifeTitle {
   font-family: TTCommons-Bold;
   font-size: 52px;
-  margin-bottom: unset !important;
-
-  @media only screen and (max-width: 500px) {
-    margin-bottom: 10px !important;
-  }
+  line-height: normal;
+  margin-bottom: 10px !important;
 }
 
 .lifeSubtitle {
   font-family: TTCommons-Regular;
   font-size: 18px;
-  margin-top: -10px;
+  margin-top: 10px;
   color: black;
   margin-right: 10px;
 }
