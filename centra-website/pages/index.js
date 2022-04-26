@@ -27,7 +27,7 @@ const responsive = {
 
 const centraCaresData = {
   content:
-    "Our community is very important to us and we want to make sure that we support our new Alberta family. We will be organizing a Centra Cares charity donation based on causes you all care about. Nominate a Calgary charity of your choice by May 31st and we will provide $10,000 to the local charity! Please contact us to share with us a cause you’re passionate about that you would like us to support.",
+    "We’re committed to supporting the causes that matter to our new Alberta family through our Centra Cares Foundation. We’ve donated over $1,000,000 to date, and we’re always looking for new ways to give back. This is why we’ll be selecting a charity nominated by you to receive $10,000! So nominate a Calgary charity today!",
   title: "Supreme Cares",
   subtitle: "Nominate a Calgary charity and Centra will donate $10,000!",
   images: [
@@ -49,17 +49,17 @@ const centraCaresData = {
     {
       seoAlt: "Cares Image",
       imagePath:
-        "/images/Section 5/Centra-Windows-Family-at-Langley-manufacturing-plant.webp",
+        "/images/Section 5/Supreme-Cares-1-FINAL.jpg",
     },
     {
       seoAlt: "Cares Image",
       imagePath:
-        "/images/Section 5/Centra-Windows-supporting-local-school-and-vancouver-giants.webp",
+        "/images/Section 5/Supreme-Cares-2-FINAL.jpg",
     },
     {
       seoAlt: "Cares Image",
       imagePath:
-        "/images/Section 5/Centra-Windows-supporting-Wagner-Hills-charity.webp",
+        "/images/Section 5/Supreme-Cares-3-FINAL.jpg",
     },
   ],
 };

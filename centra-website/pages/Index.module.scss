@@ -721,16 +721,17 @@
   padding-bottom: 80px;
   padding-top: 180px;
   background-color: #fafafa;
-  padding-left: 10%;
-  padding-right: 10%;
-  @media only screen and (max-width: 1200px) {
-    flex-direction: column-reverse;
+padding-left: 5%;
+    padding-right: 5%;
+  @media only screen and (max-width: 1450px) {
+ 
     align-items: unset;
     padding-left: 5%;
     padding-right: 5%;
   }
 
   @media only screen and (max-width: 960px) {
+    flex-direction: column-reverse;
     padding-top: 100px;
   }
   @media only screen and (max-width: 600px) {
@@ -740,13 +741,19 @@
 }
 
 .awardTextContainer {
-  margin-right: 128px;
-  width: 448px;
-  @media only screen and (max-width: 1200px) {
-    margin-right: unset;
-    margin-top: 30px;
-  }
 
+  width: 45%;
+  margin-right: 5%;
+
+  @media only screen and (max-width: 1426px) {
+    margin-right: 2%;
+
+    width: 54%;
+  }
+  @media only screen and (max-width: 960px) {
+    margin-right:unset;
+    width: 100%;
+  }
   @media only screen and (max-width: 660px) {
     width: 94%;
   }
@@ -755,6 +762,9 @@
 .awardTitle {
   font-size: 32px;
   font-family: TTCommons-Bold;
+  @media only screen and (max-width: 960px) {
+  margin-top:30px;
+  }
 }
 
 .awardText {
