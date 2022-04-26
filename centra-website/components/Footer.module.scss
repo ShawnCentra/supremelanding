@@ -13,7 +13,6 @@
     align-items: flex-start;
     justify-content: center;
     height: auto;
-
     padding-bottom: 10%;
     padding-left: unset;
   }
@@ -21,7 +20,14 @@
 .footerTitleContainer {
   display: flex;
 }
-
+.downArrow {
+  filter: invert(1);
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.rotateDownArrow {
+  transform: rotate(180deg);
+}
 .whiteArrow {
   transform: scaleX(-1);
   object-fit: contain;
@@ -53,9 +59,6 @@
     padding-left: 10%;
     padding-right: 10%;
   }
-  @media only screen and (max-width: 1100px) {
-    margin-bottom: 100px;
-  }
 }
 
 .footerSubtitle {
@@ -82,33 +85,34 @@
 }
 .footerLinkTitle {
   font-family: TTCommons-Bold;
-  font-size: 14px;
+  font-size: 24px;
   color: white;
-
+  width: 90%;
   @media only screen and (max-width: 1100px) {
     margin-bottom: 10px;
     margin-top: 40px;
-    padding-left: 10%;
     padding-bottom: 2px;
     font-size: 18px;
   }
 }
-.footerLinkText {
+.footerLinkTag {
+  color: #43c1fd;
+  text-decoration: underline;
+}
+.footerLinkText{
   z-index: 55;
-  &:hover {
-    color: #f2ff56;
-  }
   font-family: TTCommons-Regular;
   font-size: 18px;
   color: white;
-  height: 48px;
+  width: 95%;
 }
 
 .innerLinkContainer {
-  padding-left: 10%;
   padding-top: 2%;
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1100px) {
     padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 
@@ -126,6 +130,11 @@
   border-bottom: 1px solid lightgrey;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
+  @media only screen and (max-width: 1100px) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 .footerText {
@@ -190,19 +199,20 @@ a.footerText {
 }
 
 .hideDiv {
-  opacity: 0;
-  height: 0px;
-  position: absolute;
-  z-index: -10;
+  transition: all 0s !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  transition: height 0.5s, opacity 0.5s;
 }
 
-.displayDiv {
-  transition: all 1s;
+.answerContainer {
   display: flex !important;
   flex-direction: column;
   justify-content: flex-start;
   opacity: 1;
-  z-index: 1;
+
+  height: fit-content;
+  transition: height 0.5s, opacity 0.5s;
 }
 
 .spacer {

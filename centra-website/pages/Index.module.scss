@@ -157,11 +157,11 @@
   left: 0;
   right: 0;
   bottom: 11px;
-  margin-right: 32px;
+
   text-align: center;
   @media only screen and (max-width: 1300px) {
     bottom: -25px;
-    margin-right: 0px;
+
   }
 
   @media only screen and (max-width: 1170px) {
@@ -774,14 +774,32 @@
 .missionTitle {
   font-size: 52px;
   font-family: TTCommons-Bold;
-  width: 65%;
   text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
   @media only screen and (max-width: 940px) {
     max-width: 400px;
-    width: 100%;
   }
 }
-
+.logoImg {
+  width: 150px;
+  object-fit: contain;
+  @media only screen and (max-width: 700px) {
+    width: 45%;
+  }
+}
+.mobilelogoImagesContainer {
+  display: flex;
+}
+.whyTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media only screen and (max-width: 700px) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
 .missionSubtitle {
   font-size: 20px;
   font-family: TTCommons-Bold;

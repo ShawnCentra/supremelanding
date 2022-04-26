@@ -74,7 +74,7 @@ export default function components(props) {
           <h2 className={styles.caresTitle}>{props?.data?.title}</h2>
           <h3 className={styles.caresSubtitle}>{props?.data?.subtitle}</h3>
           <p className={styles.caresText}>{props?.data?.content}</p>
-          <a href="mailto:letstalk@centra.ca" className={styles.contactLink}>{"Contact Us"}</a>
+          <a href="mailto:centracares@centra.ca" className={styles.contactLink}>{"Contact Us"}</a>
 
         </div>
         <div className={styles.caresFlexWrapper}>

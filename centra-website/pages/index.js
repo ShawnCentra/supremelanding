@@ -136,7 +136,7 @@ export default function career({ data, insta }) {
         <div className={styles.containerCenterMiddle}>
           <p className={styles.headerText}>
             {
-              "We are so excited to welcome the Supreme team to our family. Centra has a very special culture, and we value all the unique gifts each of you bring to work every day. We are here to support you through this transition. As we learn about each other and align the businesses through this exciting new chapter, we want to ensure open and transparent communication."
+              "We are so happy to welcome the Supreme team to our family! This is great news for both businesses and all our employees, but also for customers in both Alberta and BC. Don’t worry- we’re here to answer any questions you may have and to support you through this transition. Read on to find out more about this exciting new chapter!"
             }
           </p>
         </div>
@@ -145,17 +145,17 @@ export default function career({ data, insta }) {
       {/* s2 */}
       <div className={styles.awardContainer}>
         <div className={styles.awardTextContainer}>
-          <p className={styles.awardTitle}>{"Why Centra Windows?"}</p>
+          <p className={styles.awardTitle}>{"Why Supreme Windows?"}</p>
 
           <p className={styles.awardText}>
             {
-              "Leadership at Centra is collaborative and supportive. This is why we took the opportunity to hear from Supreme management, to learn more about the amazing brand that you have all built and how we can help take that next step together. "
+              "At our hearts, we believe Centra and Supreme are the same. You embody all the great things we recognize and celebrate in ourselves: amazing customer service, a great eye for quality, and impeccable attention to detail. We both offer something special, and together we can make sure British Columbians and Albertans get the very best when it comes to windows and doors. We’ve taken the opportunity to hear from Supreme management, to learn more about the amazing brand that you’ve all built and how we can help take that next step together."
             }
           </p>
         </div>
         <div className={styles.awardsVideoContainer}>
           <Youtube
-            embedId={"https://www.youtube.com/embed/Xc4SkjvvHzs"}
+            embedId={"https://www.youtube.com/embed/_TOhLM4LT0U"}
             width="100%"
             height="100%"
           />
@@ -188,14 +188,7 @@ export default function career({ data, insta }) {
             {"What is the Centra Culture?"}
           </p>
           <p className={styles.text + " " + styles.workTextContainer}>
-            At Centra, passion and performance meet to create a culture full of
-            people who OWN IT! This unique, evolving culture is built on the
-            unshakeable foundation of our key values. Family, Entrepreneurial
-            Spirit, Respect, Safety, and Teamwork are more than just buzzwords.
-            Learn more from these videos. If you have any questions, just reach
-            out and we’ll be happy to answer them! In a few weeks, you will have
-            access to our internal Workplace group, where you can meet and learn
-            more about our team. Stay tuned! <br /> <br /> Feel free to contact
+            At Centra, the culture is literally award-winning. Passion and performance meet to create a culture full of people who OWN IT! This is built on the unshakeable foundation of our key values. You’ll quickly see that Family, Entrepreneurial Spirit, Respect, Safety, and Teamwork are so much more than just buzzwords to us. Learn more from these videos, and if you have any questions, just reach out! We’re all part of the same family now, and we’re always here for you. <br /> <br /> Feel free to contact
             us with any questions and concerns. We'd love to hear from you!{" "}
             <br />
             <a href="mailto:letstalk@centra.ca">Contact Us</a>
@@ -205,26 +198,26 @@ export default function career({ data, insta }) {
         <div className={styles.workVideosContainer}>
           <div className={styles.workVideosContent}>
             <Youtube
-              embedId={"https://www.youtube.com/embed/Xc4SkjvvHzs"}
+              embedId={"https://www.youtube.com/embed/sgCbuEXbbM0"}
               width="100%"
               height="100%"
               style="workVideo"
             />
 
-            <p className={styles.workTitle}>Centra Video</p>
-            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
+            <p className={styles.workTitle}>Let’s Talk</p>
+            <p className={styles.workText}>Can I be heard safely? During a transitional phase, these questions along with many others are natural. We will honour that and we look forward to addressing them, so let’s talk!  </p>
           </div>
           <div style={{ height: `50px` }} />
           <div className={styles.workVideosContent}>
             <Youtube
-              embedId={"https://www.youtube.com/embed/Xc4SkjvvHzs"}
+              embedId={"https://www.youtube.com/embed/n9q97x0esx0"}
               width="100%"
               height="100%"
               style="workVideo"
             />
 
-            <p className={styles.workTitle}>Centra Video</p>
-            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
+            <p className={styles.workTitle}>The Supreme Legacy</p>
+            <p className={styles.workText}>The Supreme Legacy is built with pride, professionalism and respect. The talented ownership group of Supreme illustrates the exciting new chapter ahead, while reflecting on their amazing journey.  </p>
           </div>
         </div>
       </div>
@@ -295,7 +288,20 @@ export default function career({ data, insta }) {
 
       {/* s5 */}
       <div className={styles.missionContainer}>
-        <p className={styles.missionTitle}>{"Why Centra? "}</p>
+        <div className={styles.whyTitleContainer}>
+          {size.width > 700 ? <img alt="canadas most admired logo" src="/images/BMCLogo.jpg" className={styles.logoImg} /> : null}
+
+          <p className={styles.missionTitle}>{"Why Centra? "}</p>
+          {size.width > 700 ? <img alt="canadas most admired logo" src="/images/MostAdmiredLogo.png" className={styles.logoImg} /> : null}
+
+        </div>
+
+        {size.width > 700 ? null : <div className={styles.mobilelogoImagesContainer}>
+          <img alt="canadas most admired logo" src="/images/MostAdmiredLogo.png" className={styles.logoImg} />
+          <img alt="canadas most admired logo" src="/images/BMCLogo.jpg" className={styles.logoImg} />
+
+        </div>}
+
         <div className={styles.missionCardContainer}>
           <div className={styles.missionCard}>
             <img
@@ -344,30 +350,30 @@ export default function career({ data, insta }) {
         </div>
       </div>
 
-      <div className={styles.workTextContentContainer }>
+      <div className={styles.workTextContentContainer}>
         <div className={styles.workVideosContainer + " " + styles.videoContainer}>
           <div className={styles.workVideosContent}>
             <Youtube
-              embedId={"https://www.youtube.com/embed/Xc4SkjvvHzs"}
+              embedId={"https://www.youtube.com/embed/twx59eDaP9I"}
               width="100%"
               height="100%"
               style="workVideo"
             />
 
-            <p className={styles.workTitle}>Centra Video</p>
-            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
+            <p className={styles.workTitle}>Employee Owned and it shows</p>
+            <p className={styles.workText}>Employee Ownership makes us different because owners care. Take a look through the lens of our teams as they experience what it means to be a Centra Owner. </p>
           </div>
           <div style={{ height: `50px` }} />
           <div className={styles.workVideosContent}>
             <Youtube
-              embedId={"https://www.youtube.com/embed/Xc4SkjvvHzs"}
+              embedId={"https://www.youtube.com/embed/WhmxAFR7Dv8"}
               width="100%"
               height="100%"
               style="workVideo"
             />
 
-            <p className={styles.workTitle}>Centra Video</p>
-            <p className={styles.workText}>This is our centra video text for the video - Ronil will add text here later </p>
+            <p className={styles.workTitle}>Centra’s Share Match Program</p>
+            <p className={styles.workText}>A company should only exist if it makes the lives of its customers, employees, and communities better. Employee Ownership benefits all three! Learn how you can invest into our Employee Ownership program. </p>
           </div>
         </div>
       </div>
@@ -515,7 +521,7 @@ export default function career({ data, insta }) {
               className={styles.relativePosition}
             >
               <img
-                src="/images/dump/nanaimo.webp"
+                src="/images/dump/nanaimo.jpg"
                 alt="nanaimo"
                 className={styles.locationImage}
               />
@@ -542,7 +548,7 @@ export default function career({ data, insta }) {
               className={styles.relativePosition}
             >
               <img
-                src="/images/dump/Calgary.jpg"
+                src="/images/dump/supreme.jpg"
                 alt="Calgary Supreme Windows"
                 className={styles.locationImage}
               />
@@ -552,12 +558,12 @@ export default function career({ data, insta }) {
         </div>
       </div>
       {/*11 */}
-      {insta  ? (
+      {insta ? (
         <>
           <div className={styles.lifeContainer}>
             <p className={styles.lifeTitle}>Follow us on Social!</p>
             <p className={styles.lifeSubtitle}>
-               {size.width > 960?  "Follow us on " : null }
+              {size.width > 960 ? "Follow us on " : null}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -585,7 +591,7 @@ export default function career({ data, insta }) {
                 Twitter
               </a>
               ,{" "}
-              {size.width > 400?  null : <br/> }
+              {size.width > 400 ? null : <br />}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -620,6 +626,7 @@ export default function career({ data, insta }) {
                 return image.media_type !== "VIDEO" ? (
                   <LazyImage
                     src={`${image.media_url}`}
+                    key={index}
                     alt={image.caption}
                     width={"100%"}
                     height={"352px"}
@@ -632,6 +639,7 @@ export default function career({ data, insta }) {
       ) : null}
       {/* 12 */}
       <CallToAction data={data[12]} supreme text={"SEE OUR CURRENT OPENINGS"} />
+      <Footer size={size} />
     </>
   );
 }
