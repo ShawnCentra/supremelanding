@@ -161,6 +161,7 @@ export default function career({ data, insta }) {
         </div>
         <div className={styles.awardsVideoContainer}>
           <Youtube
+            whySupremeSection
             embedId={"https://www.youtube.com/embed/_TOhLM4LT0U"}
             width="100%"
             height="100%"

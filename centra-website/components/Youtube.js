@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import useIntersectionObserver from "@react-hook/intersection-observer";
 
-const YoutubeEmbed = ({ embedId, width, height, style }) => {
+const YoutubeEmbed = ({ embedId, width, height, style, whySupremeSection }) => {
   const containerRef = useRef();
   const lockRef = useRef(false);
   const { isIntersecting } = useIntersectionObserver(containerRef);
@@ -10,7 +10,7 @@ const YoutubeEmbed = ({ embedId, width, height, style }) => {
     lockRef.current = true;
   }
   return (
-    <div ref={containerRef} className={`video-responsive youtubeContainer`}>
+    <div ref={containerRef} className={whySupremeSection ? `video-responsive video-responsive-supreme youtubeContainer`:`video-responsive youtubeContainer`}>
       {lockRef.current && (
         <iframe
           width="100%"
