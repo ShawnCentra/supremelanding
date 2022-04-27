@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import useWindowSize from "../utility/useWindowSize";
 //style
@@ -6,6 +6,7 @@ import styles from "./index.module.scss";
 import LazyImage from "../components/lazyImage";
 //components
 import Youtube from "../components/Youtube";
+import Navigation from "../components/Navigation";
 import CallToAction from "../components/CallToAction";
 import CentraCares from "../components/CentraCares";
 import Footer from "../components/Footer";
@@ -99,6 +100,11 @@ export default function career({ data, insta }) {
   };
   //breadcrump visibility
 
+  const whyRef = useRef(null);
+  const cultureRef = useRef(null);
+  const ownershipRef = useRef(null);
+  const caresRef = useRef(null);
+  const faqRef = useRef(null);
   return (
     <>
       <Head>
@@ -113,7 +119,7 @@ export default function career({ data, insta }) {
         {/* prevents google bots from indexing this page */}
         {/* <meta name="robots" content="noindex"></meta> */}
       </Head>
-
+      <Navigation whyRef={whyRef} cultureRef={cultureRef} ownershipRef={ownershipRef} caresRef={caresRef} faqRef={faqRef} />
       {/* s1 */}
       <div className={styles.headerBg}>
         <img
@@ -143,7 +149,7 @@ export default function career({ data, insta }) {
       </div>
 
       {/* s2 */}
-      <div className={styles.awardContainer}>
+      <div ref={whyRef} className={styles.awardContainer}>
         <div className={styles.awardTextContainer}>
           <p className={styles.awardTitle}>{"Why Supreme Windows?"}</p>
 
@@ -162,7 +168,7 @@ export default function career({ data, insta }) {
         </div>
       </div>
       {/* s3 */}
-      <div className={styles.container + " " + styles.flexUnset}>
+      <div ref={cultureRef} className={styles.container + " " + styles.flexUnset}>
         <img
           loading="lazy"
           src="/images/windows_geek_logo.webp"
@@ -221,7 +227,7 @@ export default function career({ data, insta }) {
           </div>
         </div>
       </div>
-
+      <div ref={ownershipRef} style={size.width > 960 ? { height: "0px" } : { height: "40px" }} />
       {/* s4 */}
       <div className={styles.PercentContainer}>
         <div className={styles.imagesContainer}>
@@ -289,18 +295,18 @@ export default function career({ data, insta }) {
       {/* s5 */}
       <div className={styles.missionContainer}>
         <div className={styles.whyTitleContainer}>
-          {size.width > 700 ? <img alt="canadas most admired logo" src="/images/BMCLogo.jpg" className={styles.logoImg} /> : null}
 
-          <p className={styles.missionTitle}>{"Why Centra? "}</p>
-          {size.width > 700 ? <img alt="canadas most admired logo" src="/images/MostAdmiredLogo.png" className={styles.logoImg} /> : null}
+
+          <p className={styles.missionTitle}>{"Who is Centra? "}</p>
+
 
         </div>
 
-        {size.width > 700 ? null : <div className={styles.mobilelogoImagesContainer}>
-          <img alt="canadas most admired logo" src="/images/MostAdmiredLogo.png" className={styles.logoImg} />
+        <div className={styles.mobilelogoImagesContainer}>
+          <img alt="canadas most admired logo" src="/images/MostAdmiredLogo.jpg" className={styles.logoImg} />
           <img alt="canadas most admired logo" src="/images/BMCLogo.jpg" className={styles.logoImg} />
 
-        </div>}
+        </div>
 
         <div className={styles.missionCardContainer}>
           <div className={styles.missionCard}>
@@ -380,6 +386,7 @@ export default function career({ data, insta }) {
 
       {/* s6 */}
 
+      <div ref={caresRef} style={size.width > 960 ? { height: "80px" } : { height: "0px" }} />
       <CentraCares data={centraCaresData} size={size} />
       {/* s7 */}
       <div className={styles.benefitsContainer}>
@@ -639,6 +646,7 @@ export default function career({ data, insta }) {
       ) : null}
       {/* 12 */}
       <CallToAction data={data[12]} supreme text={"SEE OUR CURRENT OPENINGS"} />
+      <div ref={faqRef} style={{ height: "0px" }} />
       <Footer size={size} />
     </>
   );
