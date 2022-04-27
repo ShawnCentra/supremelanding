@@ -35,7 +35,7 @@ const centraCaresData = {
     {
       seoAlt: "Cares Image",
       imagePath:
-        "/images/Section 5/Centra-Cares-members-celebrating-at-local-golf-tournament.webp",
+        "/images/Section 5/Centra-Windows-supporting-local-school-and-vancouver-giants.jpg",
     },
     {
       seoAlt: "Cares Image",
