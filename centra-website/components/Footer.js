@@ -766,7 +766,7 @@ export default function Footer(props) {
             className={styles.footerLinkTitleContainer}
             onClick={() => setFaq15((prevState) => !prevState)}
           >
-            <p className={styles.footerLinkTitle}>Contact Information</p>
+            <p  className={styles.footerLinkTitle}>Contact Information</p>
             <p className={styles.footerPlus}>
               <img
                 alt="down arrow"
