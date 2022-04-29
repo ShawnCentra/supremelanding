@@ -89,7 +89,7 @@
   color: white;
   width: 90%;
   z-index: 99;
-  cursor:pointer;
+  cursor: pointer;
   @media only screen and (max-width: 1100px) {
     margin-bottom: 10px;
     margin-top: 40px;
@@ -101,17 +101,22 @@
   color: #43c1fd;
   text-decoration: underline;
 }
-.footerLinkText{
-
+.footerLinkText {
   font-family: TTCommons-Regular;
   font-size: 18px;
   color: white;
   width: 95%;
-
+}
+.hideDiv {
+  transition: all 0s !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  transition: height 0.5s, opacity 0.5s;
 }
 
 .innerLinkContainer {
   padding-top: 2%;
+
   @media only screen and (max-width: 1100px) {
     padding-top: 20px;
     padding-left: 2%;
@@ -128,7 +133,7 @@
 }
 
 .footerLinkTitleContainer {
-  z-index:99;
+  z-index: 99;
   display: flex;
   align-items: baseline;
   border-bottom: 1px solid lightgrey;
@@ -180,7 +185,8 @@ a.footerText {
 .footerBottomLinksContainer {
   display: flex;
   margin-top: 111px;
-
+  position: relative;
+  z-index: 9999;
   justify-content: space-between;
   @media only screen and (max-width: 1100px) {
     flex-direction: column;
@@ -200,13 +206,6 @@ a.footerText {
   &:hover {
     filter: invert(1);
   }
-}
-
-.hideDiv {
-  transition: all 0s !important;
-  opacity: 0 !important;
-  height: 0 !important;
-  transition: height 0.5s, opacity 0.5s;
 }
 
 .answerContainer {
